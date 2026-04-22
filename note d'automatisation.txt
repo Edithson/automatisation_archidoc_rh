@@ -1,0 +1,79 @@
+J'ai préparer le projet et le dossier contenant les fichiers est prèt.
+On vas commencer par un test d'example.
+Sois les fichiers de nom suivant :
+F1 = DECI_2170_AUTORISANT_DEBLOCAGE_FCFA_10000000_ESSIMI_ZIBI_GEORGES_18072022.pdf
+F2 = DECI_2171_AUTORISANT_DEBLOCAGE_FCFA_7187438_FOKAM_KAMGA_CONSTANT_18072022.pdf
+F3 = ESD_0122_ASHU_NEE_FRIDA_AYUK_MANDATEMENT_REMBOURSEMENT_RETENUES_DROIT_PENSION_03122019_27072022.pdf
+F4 = NOTE_094_MANDATEMENT_CONDAMNATIONS_ETAT_HONORAIRES_AVOCATS_DEFENSEURS_INTERETS_ETAT_JUSTICE_INSTANCE_DPB_09052022.pdf
+
+Le formulaire se trouve via l'url "http://172.20.9.254:8000/archives"
+En cas de naicessité d'authentification, un utilisateur test est disponible avec les info suivants : login=admin et password=OOOOO
+
+Voici les différents champs du formulaires, et comment l'enregistrement se passe pour ces fichiers
+Niveau 1 (les informations, selon le nom du fichier)
+1
+<select aria-hidden="true" tabindex="-1" name="format" style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;"><option value="Document PDF">Document PDF</option><option value="Image">Image</option><option value="Document Papier">Document Papier</option></select>
+Pour ce champ, toujours choisir l'option "Document PDF"
+2
+<select aria-hidden="true" tabindex="-1" style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;"><option value="INSTRUCTIONS">INSTRUCTIONS</option><option value="CONSTITUTION">CONSTITUTION</option><option value="LOI">LOI</option><option value="LETTRE DE MISSION">LETTRE DE MISSION</option><option value="ARRETE">ARRETE</option><option value="DECRET">DECRET</option><option value="DOSSIER DU PERSONNEL">DOSSIER DU PERSONNEL</option><option value="ESD">ESD</option><option value="DOSSIER DES PENSIONS">DOSSIER DES PENSIONS</option><option value="RAPPORTS">RAPPORTS</option><option value="NOTE">NOTE</option><option value="DECISIONS">DECISIONS</option><option value="FONDS DE DOSSIER">FONDS DE DOSSIER</option></select>
+Ici, le choix se fait en fonction des 1ere caractères du nom du fichier (avant le 1er symbole _)
+Example : pour F1 (DECI_2170_...) on choisira "DECISIONS"
+pour F2 (DECI_2170_...) on choisira "DECISIONS"
+pour F3 (ESD_0122_ASHU_...) on choisira "ESD"
+pour F4 (NOTE_094_MANDATEMENT_...) on choisira "NOTE"
+pour ... on choisira ...
+3
+<textarea id="description" name="description" autocomplete="description" type="text" class="rounded-md h-20 border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 dark:border-gray-700 dark:bg-gray-100 dark:text-gray-600 dark:focus:border-indigo-600 dark:focus:ring-indigo-600 mt-1 block w-full"></textarea>
+Au niveau de l'objet, en saisie le nom complet du fichier, sans l'extention
+Ex : F1 = DECI_2170_AUTORISANT_DEBLOCAGE_FCFA_10000000_ESSIMI_ZIBI_GEORGES_18072022
+F2 = DECI_2171_AUTORISANT_DEBLOCAGE_FCFA_7187438_FOKAM_KAMGA_CONSTANT_18072022
+F3 = ...
+4
+<input id="date_doc" name="date_doc" autocomplete="date_doc" type="date" class="rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 dark:border-gray-700 dark:bg-gray-100 dark:text-gray-600 dark:focus:border-indigo-600 dark:focus:ring-indigo-600 mt-1 block w-full" value="">
+Pour ce qui est de la date, on se basera sur le dernier élément du nom du fichier
+Ex : F1 = DECI_2170_AUTORISANT_DEBLOCAGE_FCFA_10000000_ESSIMI_ZIBI_GEORGES_18072022 => date = "2022-07-18"
+F2 = DECI_2171_AUTORISANT_DEBLOCAGE_FCFA_7187438_FOKAM_KAMGA_CONSTANT_18072022 => date = "2022-07-18"
+F3...
+F4 = NOTE_094_MANDATEMENT_CONDAMNATIONS_ETAT_HONORAIRES_AVOCATS_DEFENSEURS_INTERETS_ETAT_JUSTICE_INSTANCE_DPB_09052022 => date = "2022-05-09"
+5
+<select aria-hidden="true" tabindex="-1" style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;"><option value="DGB">DGB</option><option value="FOUDA">FOUDA</option><option value="IMPRIMERIE NATIONALE">IMPRIMERIE NATIONALE</option></select>
+A ce niveau, on choisira pour chaque fichiers l'option "FOUDA"
+6
+<select aria-hidden="true" tabindex="-1" name="emplacement2" style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;"><option value="Serveur">Serveur</option></select>
+A ce niveau, on choisira pour tout les fichiers l'option "Serveur" (qui est la seule option disponible)
+7
+<input id="rayon" name="rayon" autocomplete="rayon" type="text" class="rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 dark:border-gray-700 dark:bg-gray-100 dark:text-gray-600 dark:focus:border-indigo-600 dark:focus:ring-indigo-600 mt-1 block w-full" value="">
+Pour le rayon, ce sera toujours "B6"
+8
+<input id="travee" name="travee" autocomplete="travee" type="text" class="rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 dark:border-gray-700 dark:bg-gray-100 dark:text-gray-600 dark:focus:border-indigo-600 dark:focus:ring-indigo-600 mt-1 block w-full" value="">
+Ce champ restera vide pour chaques fichiers
+9
+<input id="cote" name="cote" autocomplete="cote" placeholder="Cote de boite d'archives" type="text" class="rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 dark:border-gray-700 dark:bg-gray-100 dark:text-gray-600 dark:focus:border-indigo-600 dark:focus:ring-indigo-600 mt-1 block w-full" value="">
+Ici, pour chaque fichiers, en saisira toujours "C1560-40DE.10"
+10
+<select aria-hidden="true" tabindex="-1" style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;"><option value="DGB">DGB</option><option value="S-DAG">S-DAG</option><option value="DPC">DPC</option><option value="DPB">DPB</option><option value="DDPP">DDPP</option><option value="DREF">DREF</option><option value="SGCCC">SGCCC</option><option value="SO">SO</option><option value="DCOB">DCOB</option></select>
+Pour chaque fichiers à ce niveau on selectionnera toujours l'option "DPB"
+11
+<button class="inline-flex items-center rounded-md border border-transparent bg-indigo-300 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-white transition duration-150 ease-in-out hover:bg-green-300 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 active:bg-indigo-300 dark:focus:ring-offset-gray-800 undefined ">Suivant &nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-skip-forward" aria-hidden="true"><path d="M21 4v16"></path><path d="M6.029 4.285A2 2 0 0 0 3 6v12a2 2 0 0 0 3.029 1.715l9.997-5.998a2 2 0 0 0 .003-3.432z"></path></svg></button>
+Et la validation de l'étape 1 se fera via ce bouton
+
+Tout ces éléments se trouve dans le formulaire présent dans cette partie
+
+
+Niveau 2 (l'uploade du fichier)
+Les fichiers seront enregistré l'un après l'autre et pour chaque fichiers, on finira les 3 étapes avant de passer au fichier suivant.
+Donc à cette étape, on uplodera le fichier correspondant à la continuté des informations remplies au niveau 1
+Le champ pour les fichiers est le suivant:
+<input type="file" data-slot="input" class="flex h-9 w-full min-w-0 rounded-md border border-input bg-transparent text-sm shadow-xs transition-[color,box-shadow] outline-none file:inline-flex placeholder:text-muted-foreground/70 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 p-0 pr-3 text-muted-foreground/70 italic file:me-3 file:h-full file:border-0 file:border-r file:border-solid file:border-input file:bg-transparent file:px-3 file:text-sm file:font-medium file:text-foreground file:not-italic" id="file" name="filepath" accept=".pdf">
+Et la validation via le bouton:
+<button class="inline-flex items-center rounded-md border border-transparent bg-indigo-300 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-white transition duration-150 ease-in-out hover:bg-green-300 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 active:bg-indigo-300 dark:focus:ring-offset-gray-800 undefined ">Suivant &nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-skip-forward" aria-hidden="true"><path d="M21 4v16"></path><path d="M6.029 4.285A2 2 0 0 0 3 6v12a2 2 0 0 0 3.029 1.715l9.997-5.998a2 2 0 0 0 .003-3.432z"></path></svg></button>
+Tout ces éléments se trouvent dans le formulaire présent sur cette partie
+
+Niveau 3
+La validation, quelques soient le fichier, se fait via le bouton
+<button class="inline-flex items-center rounded-md border border-transparent bg-indigo-300 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-white transition duration-150 ease-in-out hover:bg-green-300 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 active:bg-indigo-300 dark:focus:ring-offset-gray-800 undefined "><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg> &nbsp;&nbsp;Valider</button>
+après la validationn s'assurer que le fichier est bien uploder (attendre éventuellement quelques secondes si nécessaire) avant de revenir à l'url initiale pour poursuivre les incertions de données "http://172.20.9.254:8000/archives"
+
+Le dossier (contenant les fichiers) sur lequel on fera notre premier test se trouve dans "/media/edithson/Saves/FONHOUO/Documents/MINFI/DPB/2023/FD_DPB/FONDS DE DECISIONS DPB 2022 13062023/JUIL 2022"
+
+Je crois avoir fournie tout les détails. A tu des questions ?

@@ -1,0 +1,1072 @@
+edithson@edithson-ThinkPad-T490:/media/edithson/Saves/Projets/Automates/Archidoc_RH$ node automate.js
+
+🚀 Lancement de l'automate intelligent...
+Vérification de l'accès et authentification...
+🔐 Authentification requise...
+🔓 Connecté avec succès !
+
+📂 [EXPLORATION] Analyse : /media/edithson/Saves/FONHOUO/Documents/MINFI/DPB/2024/FOND_DOSSIERS_DPB_15052024/INDEXES/FOND_DOSSIERS_DPB_15052024
+   (Aucun PDF valide ici)
+
+📂 [EXPLORATION] Analyse : /media/edithson/Saves/FONHOUO/Documents/MINFI/DPB/2024/FOND_DOSSIERS_DPB_15052024/INDEXES/FOND_DOSSIERS_DPB_15052024/2022
+   (Aucun PDF valide ici)
+
+📂 [EXPLORATION] Analyse : /media/edithson/Saves/FONHOUO/Documents/MINFI/DPB/2024/FOND_DOSSIERS_DPB_15052024/INDEXES/FOND_DOSSIERS_DPB_15052024/2022/DECEMBRE
+   📄 1 fichier(s) PDF trouvé(s).
+
+   [1/2] Analyse : FD_2086_DEMANDE_PAIEMENT_INDEMNITE_PROFIT_AGENTS_PUBLICS_DEFENSE_INTERETS_ETAT_JUSTICE_01122022.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+📂 [EXPLORATION] Analyse : /media/edithson/Saves/FONHOUO/Documents/MINFI/DPB/2024/FOND_DOSSIERS_DPB_15052024/INDEXES/FOND_DOSSIERS_DPB_15052024/2022/OCTOBRE
+   📄 1 fichier(s) PDF trouvé(s).
+
+   [1/2] Analyse : DECI_4081_AUTORISANT_DEBLOCAGE_SOMME_FCFA_15310000_PROFIT_MAITRES_YAPMI_JEANNE_FRANCOISE_09112020.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+📂 [EXPLORATION] Analyse : /media/edithson/Saves/FONHOUO/Documents/MINFI/DPB/2024/FOND_DOSSIERS_DPB_15052024/INDEXES/FOND_DOSSIERS_DPB_15052024/2023
+   (Aucun PDF valide ici)
+
+📂 [EXPLORATION] Analyse : /media/edithson/Saves/FONHOUO/Documents/MINFI/DPB/2024/FOND_DOSSIERS_DPB_15052024/INDEXES/FOND_DOSSIERS_DPB_15052024/2023/CRIS CHARGE
+   (Aucun PDF valide ici)
+
+📂 [EXPLORATION] Analyse : /media/edithson/Saves/FONHOUO/Documents/MINFI/DPB/2024/FOND_DOSSIERS_DPB_15052024/INDEXES/FOND_DOSSIERS_DPB_15052024/2023/CRIS CHARGE/AOUT
+   (Aucun PDF valide ici)
+
+📂 [EXPLORATION] Analyse : /media/edithson/Saves/FONHOUO/Documents/MINFI/DPB/2024/FOND_DOSSIERS_DPB_15052024/INDEXES/FOND_DOSSIERS_DPB_15052024/2023/CRIS CHARGE/AOUT/ARCHIDOC_NEW_CHARGE_10022026
+   📄 15 fichier(s) PDF trouvé(s).
+
+   [1/2] Analyse : DECI_3056_AUTORISANT_MANDATEMENT_SOMME_FCFA_1101800_PROFIT_TIAKO_GERMAINE_07082023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3071_AUTORISANT_DEBLOCAGE_SOMME_FCFA_124250000_PROFIT_DIVERS_BENEFICIAIRES_07082023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3073_AUTORISANT_BLOCAGE_SOMME_FCFA_120000000_PROFIT_DIVERS_BENEFICIAIRES_07082023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_2313_AUTORISANT_MANDATEMENT_SOMME_FCFA_1248984_PROFIT_SOULEYMANOU_GARBA_09082023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_3002_AUTORISANT_DEBLOCAGE_SOMME_FCFA_31312500_PROFIT_AWWAL_BAKARI_04082023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_3055_AUTORISANT_MANDATEMENT_SOMME_FCFA_135598_PROFIT_AKONNUI_GIOVANI_07082023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_3062_AUTORISANT_DEBLOCAGE_SOMME_FCFA_26365000_PROFIT_EBAH_NTOKO_JUSTICE_07082023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_3064_AUTORISANT_DEBLOCAGE_SOMME_FCF_2900000_PROFIT_OMGBA_AHANDA_PINON_07082023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_3070_AUTORISANT_DEBLOCAGE_SOMME_FCFA_1121475_PROFIT_BITOB_A_YOMBO_ROSALIE_07082023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_3072_AUTORISANT_DEBLOCAGE_SOMME_FCFA_1559517_PROFIT_ZAMBO_ATANGANA_RICHARD_07082023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_3074_AUTORISANT_MANDATEMENT_SOMME_FCFA_5571239_ADZESSA_BIKOBO_EPSE_ABANDA_07082023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_3075_AUTORISANT_MANDATEMENT_SOMME_FCFA_623239_PROFIT_NYOBE_RAYMOND_HILAIRE_PIERRE_07082023.PDF
+      ⚠️ Échec (Timeout/Réseau) : page.goto: Timeout 120000ms exceeded.
+
+   [1/2] Analyse : FD_DECI_3097_AUTORISANT_DSEBLOCAGE_SOMME_FCFA_5974603_PROFIT_ONGUENE_TSANGA_CLOTHILDE_AIMEE_07082023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_3102_AUTORISANT_MANDATEMENT_SOMME_FCFA_663842_PROFIT_MOUZON_DANIEL_07082023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_3114_AUTORISANT_MANDATEMENT_SOMME_FCFA_3112242_PROFIT_NJIKE_FEUKEU_FERDINAND_07082023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   🔄 RÉESSAI local des 1 fichier(s)...
+
+   [2/2] Tentative de secours : FD_DECI_3075_AUTORISANT_MANDATEMENT_SOMME_FCFA_623239_PROFIT_NYOBE_RAYMOND_HILAIRE_PIERRE_07082023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+      ✅ Succès au deuxième essai !
+
+📂 [EXPLORATION] Analyse : /media/edithson/Saves/FONHOUO/Documents/MINFI/DPB/2024/FOND_DOSSIERS_DPB_15052024/INDEXES/FOND_DOSSIERS_DPB_15052024/2023/CRIS CHARGE/AVRIL
+   📄 2 fichier(s) PDF trouvé(s).
+
+   [1/2] Analyse : FD_DECI_0202_AUTORISANT_MANDATEMENT_SOMME_FCFA_2699562_NGBWA_MENGUE_OCEANE_URSULE_FRANCESCA_06042022.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_1368_AUTORISANT_MANDATEMENT_FCFA_248543_NGUEKENG_DONGMO_ESTHER_24042023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+📂 [EXPLORATION] Analyse : /media/edithson/Saves/FONHOUO/Documents/MINFI/DPB/2024/FOND_DOSSIERS_DPB_15052024/INDEXES/FOND_DOSSIERS_DPB_15052024/2023/CRIS CHARGE/JUILLET_2023
+   📄 51 fichier(s) PDF trouvé(s).
+
+   [1/2] Analyse : DECI_01965_AUTORISANT_DEBLOCAGE_FCFA_5056115_AYOMBA_OLEMBA_NEE_MBASSA_BEDIANG_MELANIE_VERONIQUE_30062023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_01967_AUTORISANT_DEBLOCAGE_FCFA_400050_ANDOU_NEE_MENDOUA_BITA_PAULINE_30062023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_01968_AUTORISANT_DEBLOCAGE_FCFA_344303_OLOUMAN_GASTON_NICOLAS_30062023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_01972_AUTORISANT_MANDATEMENT_FCFA_5541959_MAVOBOLE_EBENEZER_30062023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_01973_AUTORISANT_MANDATEMENT_FCFA_7900432_EKEMA_NDOKO_EMMANUEL_30062023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_01975_AUTORISANT_MANDATEMENT_FCFA_11341994_BABINNE_VIVIANE_30062023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_01979_AUTORISANT_DEBLOCAGE_FCFA_1232376_OTABELA_MESSI_LOUIS_JUSTIN_30062023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_01981_AUTORISANT_MANDATEMENT_FCFA_2699562_NGBWA_MENGUE_OCEANNE_URSILE_30062023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_01982_AUTORISANT_DEBLOCAGE_FCFA_400364_NDJOUH_MATHURIN_NEE_MESSOU_MORETA_MARIE_MERLYNE_30062023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_01987_AUTORISANT_DEBLOCAGE_FCFA_767180_MINKONDA_FOKONO_LAMBERD_30062023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_01990_AUTORISANT_DEBLOCAGE_FCFA_157651_NNANGA_DEBORA_MLE_656380U_30062023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_01991_AUTORISANT_MANDATEMENT_FCFA_7835364_ONGBONDEK_TATIANA_NICAISE_30062023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_01992_AUTORISANT_MANDATEMENT_FCFA_3823971_EFFA_ESSOMBA_BENOIT_30062023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_01993_AUTORISANT_MANDATEMENT_FCFA_5616222_MAMAT_NEE_DAIFERLE_MADELEINE_MLE_573644J_30062023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_01994_AUTORISANT_MANDATEMENT_FCFA_9034047_MBEKAM_EPSE_MBA_JEANNE_MARIE_30062023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_01996_AUTORISANT_MANDATEMENT_FCFA_3050486_NJOMI_ETIENNE_30062023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_02028_AUTORISANT_DEBLOCAGE_FCFA_828154_ETOMO_MENYE_ALBERT_SERGE_04072023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_02032_AUTORISANT_MANDATEMENT_FCFA_5406177_SAMBA_SOUGA_CELINE_LAFRANCE_04072023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_02049_AUTORISANT_MANDATEMENT_FCFA_518759_BAKARY_IZAHY_04072023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_02216_AUTORISANT_MANDATEMENT_FCFA_899580_MOLO_NGAH_MLE_738483Q_14072023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_02217_AUTORISANT_MANDATEMENT_FCFA_10970400_TIBOKBE_DJIBOUINA_14072023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_02218_AUTORISANT_MANDATEMENT_FCFA_2970000_BILONG_ANATOLE_14072023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_02219_AUTORISANT_MANDATEMENT_FCFA_102689_MOHAMAN_TAHIROU_14072023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_1188_AUTORISANT_MANDATEMENT_SOMME_FCFA_781055_PROFIT_MOULANGO_EMMANUEL_28092022.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_2212_AUTORISANT_MANDATEMENT_SOMME_FCFA_4150515_PROFIT_TANGAKOU_SOH_ROBERT_14072023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_2213_AUTORISANT_MANDATEMENT_SOMME_FCFA_12245735_PROFIT_LABABAN_MOHAMED_NAGAMBO_14072023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_2214_AUTORISANT_MANDATEMENT_SOMME_FCFA_4396300_PROFIT_MOHAMADOU_BALLO_SOUAIBOU_14072023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_2215_AUTORISANT_MANDATEMENT_SOMME_FCFA_2234108_PROFIT_OKALA_AUGUSTINE_14072023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_2221_AUTORISANT_MANDATEMENT_SOMME_FCFA_752491_PROFIT_NGO_BAYIHA_ISABELLE_FLORA_14072023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_2252_AUTORISANT_DEBLOCAGE_FCFA_29728364_EYADA_PATRICE_29062023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_2330_AUTORISANT_MANDATEMENT_FCFA_182943254_PNDP_07072023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_2372_AUTORISANT_DEBLOCAGE_FCFA_25583533_POKOSSY_DOUMBE_NICOLAS_JOSEPH_07072023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_2374_AUTORISANT_DEBLOCAGE_SOMME_FCFA_155270917_PROFIT_BAM_INTERNATIONAL_CAMEROON_07072023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_2399_AUTORISANT_MANDATEMENT_FCFA_5944425_OUM_EPSE_BAHA_SUZANNE_MIRABELLE_10072023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_2402_AUTORISANT_MANDATEMENT_FCFA_9442756_NGO_LIBOT_MAZARINE_ROSE_10072023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_2421_AUTORISANT_MANDATEMENT_FCFA_602817_NKAKE_NGOMBA_DERRICK_DIDIER_NEE_ZE_ABA_PULCHERIE_10072023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_2423_AUTORISANT_DEBLOCAGE_FCFA_30427500_ESSONO_EDOUARD_JOSEPH_10072023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_2479_AUTORISANT_MANDATEMENT_3989286_DONGMO_ERNESTINE_MLE_640780S_10072023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_2508_AUTORISANT_MANDATEMENT_FCFA_417918906_ PROFIT_CONFEX_OIL_13072023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_2554_AUTORISANT_DEBLOCAGE_FCFA_114714972_SNI_17072023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_2555_AUTORISANT_DEBLOCAGE_SOMME_FCFA_1097244_PROFIT_EMANE_17072023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_2776_AUTORISANT_MANDATEMENT_FCFA_770849_KOUEMO_JOSEPH_20072023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_2777_AUTORISANT_MANDATEMENT_FCFA_2772576_MOHAMAN_TANKO_20072023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_2782_AUTORISANT_DEBLOCAGE_SOMME_FCFA_832986_PROFIT_AYISSI_EUGENE_GERARD_20072023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_2792_AUTORISANT_DEBLOCAGE_FCFA_11925000_MBOMO_NJOYA_AICHA_20072023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_8403_AUTORISANT_MANDATEMENT_FCFA_11001995_AICHATA_OUSMANE_EPSE_BAKARY_OUSMANE_10072023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_AUTORISANT_DEBLOCAGE_FCFA_5000000_MBANG_OLIBOKO_HONORE_29062023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_AUTORISANT_DEBLOCAGE_FCFA_68327109_NOMO_BEYALA_29062023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : NOTE_MANDATEMENT_INDEMNITES_REPRESENTATION_ETAT_JUSTICE_DEFENSEURS_INTERETS_DGSN_13072023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : NOTE_REGLEMENT_AMIABLE_PRESTATIONS_REALISEES_CABINET_ENVIRO_DLD_FCFA_TTC_17974753_23062023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : Numérisation couleur rapide vers un fichier PDF_1_20240516161320379.PDF
+      ❌ Rejeté (Format Invalide) : Nature de document non autorisée ou inconnue ('Numérisation couleur rapide vers un fichier PDF').
+
+📂 [EXPLORATION] Analyse : /media/edithson/Saves/FONHOUO/Documents/MINFI/DPB/2024/FOND_DOSSIERS_DPB_15052024/INDEXES/FOND_DOSSIERS_DPB_15052024/2023/CRIS CHARGE/JUIN
+   📄 22 fichier(s) PDF trouvé(s).
+
+   [1/2] Analyse : DECI_01940_AUTORISANT_MANDATEMENT_FCFA_16529094_FOUDA_EPSE_OKALLA_MARIE_DENISE_20062023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_01964_AUTORISANT_MANDATEMENT_FCFA_986965_STE_MPOWER_CAMEROUN_SARL_30062023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_01969_AUTORISANT_DEBLOCAGE_FCFA_993610_TSIMI_EBONO_BERNARD_YVES_30062023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_01977_AUTORISANT_MANDATEMENT_FCFA_985824_MIMBANG_TARCIAL_FRITZ_30062023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_01997_AUTORISANT_MANDATEMENT_FCFA_8308083_AGBOR_BAJOR_BERTHA_30062023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_01997_AUTORISANT_MANDATEMENT_SOMME_FCFA_8308093_PROFIT_AGBOR_BAJOR_BERTHA_30062023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_02031_AUTORISANT_MANDATEMENT_FCFA_3525479_TOBOKBE_SARBA_ANDRE_04072023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_02201_AUTORISANT_MANDATEMENT_FCFA_501354_FOMO_MAWAMBA_LAURIE_BRIANE_07072023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_1940_AUTORISANT_MANDATEMENT_SOMME_FCFA_16529094_PROFIT_FOUDA_EPSE_OKALLA_MARIE_DENISE_20062023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_1964_AUTORISANT_MANDATEMENT_SOMME_FCFA_986965_PROFIT_MPOWER_CAMEROUN_SARL_30062023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_1969_AUTORISANT_DEBLOCAGE_SOMME_FCFA_993610_PROFIT_TSIMI_EBONO_BERNARD_YVES_30062023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_1977_AUTORISANT_MANDATEMENT_SOMME_FCFA_955824_PROFIT_MIMBANG_TARCIAL_FRITZ_30062023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_2031_AUTORISANT_MANDATEMENT_SOMME_FCFA_3525479_PROFIT_TOBOKBE_SARBA_ANDRE_04072023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_2201_AUTORISANT_MANDATEMENT_SOMME_FCFA_501354_PROFIT_FOMO_MAWAMBA_LAURIE_BRIANE_07072023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_2290_AUTORISANT_DEBLOCAGE_FCFA_44737500_NOMO_BEYALA_29062023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_2290_AUTORISANT_DEBLOCAGE_SOMME_FCFA_44737500_PROFIT_NOMO_BEYALA_29062023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_2291_AUTORISANT_DEBLOCAGE_FCFA_15310000_BASSONG_JACQUES_29062023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_2291_AUTORISANT_DEBLOCAGE_SOMME_FCFA_15310000_PROFIT_BASSONG_JACQUES_29062023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_2635_AUTORISANT_MANDATEMENT_SOMME_FCFA_26834190_PROFIT_STE_OUTCOM_AFRICA_LTD_19062023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_AUTORISANT_MANDATEMENT_FCFA_26824190_STE_OUTCOM_AFRICA_LTD_19062023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_2146_AUTORISANT_DEBLOCAGE_SOMME_FCFA_39275000_YAPMI_JEANNE_FRANCOISE_19062023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_2208_AUTORISANT_DEBLOCAGE_SOMME_FCFA_15000000_ELOUNDOU_ARMAND_PATRICK_29062023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+📂 [EXPLORATION] Analyse : /media/edithson/Saves/FONHOUO/Documents/MINFI/DPB/2024/FOND_DOSSIERS_DPB_15052024/INDEXES/FOND_DOSSIERS_DPB_15052024/2023/CRIS CHARGE/MAI
+   📄 24 fichier(s) PDF trouvé(s).
+
+   [1/2] Analyse : FD_0621_REGLEMENT_HONORAIRES_LEUGA_TCHUTCHUA_DEBNIS_24052023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_1816_AUTORISANT_DEBLOCAGE_SOMME_FCFA_17268607_ENGOMBO_HINEMINEU_JACQUELINE_29052023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_1817_AUTORISANT_MANDATEMENT_SOMME_FCFA_7100524_ YAMINDO_NEE_DJOMEGNI_HERVE_SYLVIE_29052023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_1818_AUTORISANT_MANDATEMENT_SOMME_FCFA_10152863_29052023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_1819_AUTORISANT_MANDATEMENT_SOMME_FCFA_6843403_PROFIT_NGASSAM_NEE_NKWATCHO_NGOUNOU_YVETTE_29052023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_1820_AUTORISANT_MANDATEMENT_SOMME_FCFA_10451348_WAWO_RACHEL_MERLINE_29052023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_1821_AUTORISANT_MANDATEMENT_SOMME_FCFA_5850383_TCHAMBA_YAMKAM_EPSE_YENGUE_29052023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_1822_AUTORISANT_MANDATEMENT_SOMME_FCFA_1997052_TOMO_NEE_NYEBE_CALIXTE_29052023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_1823_AUTORISANT_MANDATEMENT_SOMME_FCFA_5292890_PROFIT_ESSONO_AMBROISE_LOUIS_29052023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_1824_AUTORISANT_MANDATEMENT_SOMME_FCFA_4551806_OUAFO_NEE_MOGUEU_MARIE_NWAFO_29052023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_1825_AUTORISANT_MANDATEMENT_SOMME_FCFA_3958019_PROFIT_FOUMANE_ZE_NEE_MBOTCHAK_ANGES_MARIE_29052023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_1826_AUTORISANT_MANDATEMENT_SOMME_FCFA_3612212_NDUM_ALAIN_HERMANN_29052023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_1827_AUTORISANT_MANDATEMENT_SOMME_FCFA_3273438_TIENJOP_NEE_YOSSA_MARIE_JOSEPHINE_29052023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_1828_AUTORISANT_MANDATEMENT_SOMME_FCFA_3118738_NGOGANG_NEE_YONKEU_JEANNE_29052023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_1829_AUTORISANT_MANDATEMENT_SOMME_FCFA_2586891_EKONGOLO_NEE_NGAH_ESSIGA_CATHERINE_29052023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_1830_AUTORISANT_MANDATEMENT_SOMME_FCFA_2505381_YOUSSOUFA_FADIL_DOUADA_29052023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_1831_AUTORISANT_MANDATEMENT_SOMME_FCFA_1978886_PROFIT_BOUGA_BARLA_NEE_AOUE_KATRINA_MARIE_CLAIRE_29052023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_1832_AUTORISANT_MANDATEMENT_SOMME_FCFA_1445369_MAIRAMA_29052023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_1833_AUTORISANT_MANDATEMENT_SOMME_FCFA_1195389_ASSIGA_LUCIEN_NESTORE_29052023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_1834_AUTORISANT_MANDATEMENT_SOMME_FCFA_1452089_DOOH_OTSIE_MARIE_LOUISE_29052023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_1835_AUTORISANT_MANDATEMENT_SOMME_FCFA_1186755_DIMI_VIRGINIE_BLANCHE_EPSE_NZHIE_29052023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_1836_AUTORISANT_MANDATEMENT_SOMME_FCFA_1085002_PROFIT_KAMDEM_NEE_MEYOU_JEANNE_29052023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_1837_AUTORISANT_MANDATEMENT_SOMME_FCFA_365773_PROFIT_ETEME_NKOGO_NEE_KANA_HONORINE_CLOTILDE_29052023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_REMBOURSEMENT_AYANTS_DROITS_CADRE_OPERATION_RECOUVREMENT_COMPTES_DECEDES_23052023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+📂 [EXPLORATION] Analyse : /media/edithson/Saves/FONHOUO/Documents/MINFI/DPB/2024/FOND_DOSSIERS_DPB_15052024/INDEXES/FOND_DOSSIERS_DPB_15052024/2023/CRIS CHARGE/MARS
+   📄 1 fichier(s) PDF trouvé(s).
+
+   [1/2] Analyse : FD_CONSTITUTION_17032023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+📂 [EXPLORATION] Analyse : /media/edithson/Saves/FONHOUO/Documents/MINFI/DPB/2024/FOND_DOSSIERS_DPB_15052024/INDEXES/FOND_DOSSIERS_DPB_15052024/2023/LEILA CHARGE
+   (Aucun PDF valide ici)
+
+📂 [EXPLORATION] Analyse : /media/edithson/Saves/FONHOUO/Documents/MINFI/DPB/2024/FOND_DOSSIERS_DPB_15052024/INDEXES/FOND_DOSSIERS_DPB_15052024/2023/LEILA CHARGE/NOVEMBRE
+   📄 18 fichier(s) PDF trouvé(s).
+
+   [1/2] Analyse : DECI_03372_AUTORISANT_MANDATEMENT_FCFA_3432883_EWANE_NGOUPE_NKONA_NEE_AKOUMOU_LUCIE_02112023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_03381_AUTORISANT_DEBLOCAGE_FCFA_7148340_MBATANG_SIMON_NDIFOR_02112023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_03382_AUTORISANT_MANDATEMENT_FCFA_2888801_ABENG_OBAME_BERTRAND_02112023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_03641_AUTORISANT_MANDATEMENT_FCFA_328000_MOCHE_JUSTINE_SOLANGE_24112023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3626_AUTORISANT_MANDATEMENT_SOMME_FCFA_758880_PROFIT_NSANGOU_SALIFOU_24112023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3638_AUTORISANT_MANDATEMENT_SOMME_FCFZ_12867990_PROFIT_MONKAM_KOUAMEGNI_GYLENE_JOSETTE_24112023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3966_AUTORISANT_MANDATEMENT_FCFA_591830_ETS_LA_PIERRE_31102023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_4083_AUTORISANT_DEBLOCAGE_SOMME_FCFA_35941125_PROFIT_NOMO_BEYALA_09112023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_4348_AUTORISANT_DEBLOCAGE_SOMME_FCFA_2900000_PROFIT_OMGBA_AHANDA_PINON_24112023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_364_MANDATEMENT_AVANCES_HONORAIRES_PONDY_PAULINE_MARIE_CADRE_SUIVI_AFFAIRES_ETAT_CAMEROUN_TERREOS_COMMODITIES_08112023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_3377_AUTORISANT_MANDATEMENT_SOMME_FCFA_4246023_POUMBE_NGBANG_EMMANUEL_DOUGLAS_02112023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_3378_AUTORISANT_MANDATEMENT_SOMME_FCFA_340339_BALENGLA_NEE_BANDOLO_ODILIA_02112023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_3384_AUTORISANT_MANDATEMENT_SOMME_FCFA_702036_GNMAN_CHANTALE_02112023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_3386_AUTORISANT_MANDATEMENT_SOMME_FCFA_2970216_NGUBUI_GODDEN_02112023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_3387_AUTORISANT_MANDATEMENT_SOMME_FCFA_3967320_PROFIT_NOMO_AYISSI_MARIE_JOSEPH_02112023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_3389_AUTORISANT_MANDATEMENT_SOMME_FCFA_1597991_PROFIT_LOUMI_VICTORINE_02112023.PDF
+
+      📡 [ALERTE] Connexion perdue avec le serveur (172.20.9.254) !
+      ⏳ L'automate active la STASE. Il reprendra dès le retour du réseau...
+      ✅ [RÉSEAU RÉTABLI] Connexion retrouvée ! Fin de la stase.
+
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_PAIEMENT_CREANCE_MAGFORCE_BELGIQUE_09112023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_PAIEMENT_HONORAIRES_INDEMNITES_REPRESENTATION_FRAIS_CONDOMMNATION_ETAT_JUSTICE_08112023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+📂 [EXPLORATION] Analyse : /media/edithson/Saves/FONHOUO/Documents/MINFI/DPB/2024/FOND_DOSSIERS_DPB_15052024/INDEXES/FOND_DOSSIERS_DPB_15052024/2023/LEILA CHARGE/OCTOBRE
+   📄 52 fichier(s) PDF trouvé(s).
+
+   [1/2] Analyse : DECI_3231_AUTORISANT_MANDATEMENT_SOMME_FCFA_806710_PROFIT_NLENG_NEE_NGO_NYOTH_HERMINE_20102023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3233_AUTORISANT_MANDATEMENT_SOMME_FCFA_136583_PROFIT_ZOO_BILOO_PIERRE_DIEUDONNE_20102023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3234_AUTORISANT_MANDATEMENT_SOMME_FCFA_58540_PROFIT_PEDEZOETSO_MADELEINE_20102023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3235_AUTRISANT_MANDATEMENT_SOMME_FCFA_12206300_PROFIT_MOHAMADOU_BACHIROU_ABDOURAMAN_20102023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3238_AUTORISANT_MANDATEMENT_SOMME_FCFA_10680480_PROFIT_NGOUEGNI_BIDJIOGO_EPSE_BIAMBEH_ALICE_20102023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3320_AUTORISANT_MANDATEMENT_SOMME_FCFA_1185606_PROFIT_ISSA_MADIA_WASSANI_26102023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3321_AUTORISANT_MANDATEMENT_SOMME_FCFA_6079754_PROFIT_ENDJAM_AMBANG_CEDRIC_26102023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3322_AUTORISANT_MANDATEMENT_SOMME_FCFA_1866086_PROFIT_NGONO_BERNADETTE_26102023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3323_AUTORISANT_MANDATEMENT_SOMME_FCFA_1413434_PROFIT_BARAN_A_DOUNG_FATOU_MIREILLE_26102023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3325_AUTORISANT_MANDATEMENT_SOMME_FCFA_1684708_PROFIT_MEVING_TONNY_MIREILLE_26102023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3326_AUTORISANT_MANDATEMENT_SOMME_FCFA_6398220_PROFIT_TENGOUA_AUGUSTE_26102023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3327_AUTORISANT_MANDATEMENT_SOMME_FCFA_380770_PROFIT_MEBONGHO_KAMPILO_BARBE_26102023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3330_AUTORISANT_MANDATEMENT_SOMME_FCFA_829114_PROFIT_NDJOUVO_HAPI_TCHAPEYOU_CHRISTELLE_26102023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3332_AUTORISANT_MANDATEMENT_SOMME_FCFA_719063_PROFIT_BEYINA_ATHANASE_26102023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3333_AUTORISANT_MANDATEMENT_SOMME_FCFA_812788_PROFIT_SAHADATOU_OUSMANOU_26102023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3334_AUTORISANT_MANDATEMENT_SOMME_FCFA_225255_PROFIT_ELOUMA_MARCELLIN_25102023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3335_AUTORISANT_MANDATEMENT_SOMME_FCFA_539322_PROFIT_NYOME_NEE_KAPTCHOUANG_NGUANANG_ELISE_JACQUELINE_26102023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3336_AUTORISANT_MANDATEMENT_SOMME_FCFA_985450_PROFIT_NGOLEBONG_MARTIAL_NDELLEY_26102023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3337_AUTORISANT_MANDATEMENT_SOMME_FCFA_267885_PROFIT_MODI_KOKO_EBELE_HERMINE_PELAGIE_GRACE_26102023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3339_AUTORISANT_MANDATEMENT_SOMME_FCFA_898039_PROFIT_BEHOUMIE_ALBERT_DOMINIQUE_26102023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3340_AUTORISANT_MANDATEMENT_SOMME_FCFA_1082976_PROFIT_YUH_RAPHAEL_NTOH_26102023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3352_AUTORISANT_MANDATEMENT_SOMME_FCFA_851200_PROFIT_MENDOGO_ROGER_02112023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3368_AUTORISANT_DEBLOCAGE_SOMME_FCFA_2900000_PROFIT_OMGBA_AHANDA_PINON_02112023.PDF
+      ⚠️ Échec (Timeout/Réseau) : page.goto: Timeout 120000ms exceeded.
+
+   [1/2] Analyse : DECI_3373_AUTORISANT_DEBLOCAGE_SOMME_FCFA_14431502_PROFIT_DIVERS_BENEFICIAIRES_02112023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3374_AUTORISANT_MANDATEMENT_SOMME_FCFA_3640523_PROFIT_AKAME_ELISABETH_ELLIOT_02112023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3375_AUTORISANT_MANDATEMENT_SOMME_FCFA_489888_PROFIT_BESONG_TABE_JOHN_02112023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3376_AUTORISANT_MANDATEMENT_SOMME_FCFA_3200860_PROFIT_ONANENA_BIDIAS_THEOPHILE_02112023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3379_AUTORISANT_MANDATEMENT_SOMME_FCFA_986103_PROFIT_GODEHI_NEE_BELL_SOLANGE_MIREILLE_02112023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3380_AUTORISANT_MANDATEMENT_SOMME_FCFA_116782_PROFIT_FOMO_NEE_TEULAWO_MARIE_ANTOINETTE_02112023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3383_AUTORISANT_MANDATEMENT_SOMME_FCFA_1727352_PROFIT_LAMI_YAYA_02112023.PDF
+
+      📡 [ALERTE] Connexion perdue avec le serveur (172.20.9.254) !
+      ⏳ L'automate active la STASE. Il reprendra dès le retour du réseau...
+      ✅ [RÉSEAU RÉTABLI] Connexion retrouvée ! Fin de la stase.
+
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3385_AUTORISANT_MANDATEMENT_SOMME_FCFA_451694_PROFIT_LIJOUOM_MANDOU_MBOHOU_BALKIS_02112023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3388_AUTORISANT_MANDATEMENT_SOMME_FCFA_8622025_PROFIT_TCHOFFO_PIERRE_MARIE_02112023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3392_AUTORISANT_MANDATEMENT_SOMME_FCFA_2271389_PROFIT_NGUEMDJOM_MICHEL_02112023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3797_AUTORISANT_DEBLOCAGE_SOMME_FCFA_666250000_PROFIT_WOUMENI_JEAN_PAULIN_06102023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3829_AUTORISANT_MANDATEMENT_SOMME_FCFA_412460000_PROFIT_SCI_GUWU_IMMO_23102023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3881_AUTORISANT_DEBLOCAGE_SOMME_FCFA_27427500_PROFIT_AWWALL_BAKARI_24102023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_391_AUTORISANT_MANDATEMENT_SOMME_FCFA_4875681_PROFIT_KOUNGOU_EDIMA_ELIANE_DIDIER_02112023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3965_AUTORISANT_MANDATEMENT_SOMME_FCFA_1339156_PROFIT_TANYI_MATHIAS_NEE_EVERLINE_EBOK_OROCK_31102023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3990_AUTORISANT_DEBLOCAGE_SOMME_FCFA_2340483_PROFIT_EPELLE_DIEUDONNE_31102023.PDF
+
+      📡 [ALERTE] Connexion perdue avec le serveur (172.20.9.254) !
+      ⏳ L'automate active la STASE. Il reprendra dès le retour du réseau...
+      ✅ [RÉSEAU RÉTABLI] Connexion retrouvée ! Fin de la stase.
+
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_4086_AUTORISANT_DEBLOCAGE_SOMME_FCFA_89590000_PROFIT_ESSONO_EDOUARD_JOSEPH_09112023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_280_REMBOURSEMENT_FRAIS_PRODUCTION_PASSEPORTS_02102023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_2994_AUTORISANT_MANDATEMENT_SOMME_FCFA_6394731_YIMGOA_CHIAWOUTU_NGOZI_28092023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_3229_AUTORISANT_MANDATEMENT_SOMME_FCFA_1030428_HABOU_20102023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_3315_AUTORISANT_MANDATEMENT_SOMME_FCFA_212641_PROFIT_TABETH_BRIGITTE_26102023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_3317_AUTORISANT_MANDATEMENT_SOMME_FCFA_201015_PROFIT_DJEDAK_LESLYNINE_26102023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_3324_AUTORISANT_MANDATEMENT_SOMME_FCFA_12042064_KOMBA_FANKAM_JOSEPH_FREDDY_26102023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_3328_AUTORISANT_MANDATEMENT_SOMME_FCFA_277187_PROFIT_KAMDEM_SIMO_NEE_MAGNE_DORETTE_26102023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_3329_AUTORISANT_MANDATEMENT_SOMME_FCFA_1546884_GWEM_SAMUEL_PIERRE_ELDOUX_26102023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_3331_AUTORISANT_MANDATEMENT_SOMME_FCFA_514854_ESSOMBA_FRANCOIS_XAVIER_26102023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_3866_AUTORISANT_DEBLOCAGE_SOMME_FCFA_27354499_PROFIT_CHARLES_NGUINI_24102023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_3874_AUTORISANT_MANDATEMENT_SOMME_FCFA_25625500_BINDA_NEE_ESTHER_NJANG_OJONG_MBOH_24102023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_NOTE_PAIEMENT_HONORAIRES_FOURET_JULIEN_ARGOS_CONSTRUCTIONS_10082023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   🔄 RÉESSAI local des 1 fichier(s)...
+
+   [2/2] Tentative de secours : DECI_3368_AUTORISANT_DEBLOCAGE_SOMME_FCFA_2900000_PROFIT_OMGBA_AHANDA_PINON_02112023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+      ✅ Succès au deuxième essai !
+
+📂 [EXPLORATION] Analyse : /media/edithson/Saves/FONHOUO/Documents/MINFI/DPB/2024/FOND_DOSSIERS_DPB_15052024/INDEXES/FOND_DOSSIERS_DPB_15052024/2023/LEILA CHARGE/SEPTEMBRE
+   📄 29 fichier(s) PDF trouvé(s).
+
+   [1/2] Analyse : DECI_2432_AUTORISANT_DEBLOCAGE_SOMME_FCFA_7172875_PROFIT_GWOGON_EMMANUEL_06092023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_2440_AUTORISANT_MANDATEMENT_SOMME_FCFA_774476_PROFIT_MINLO_MARTIN_LUTHER_07092023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_2885_AUTORISANT_MANDATEMENT_SOMME_FCFA_302652_PROFIT_SOH_MENDOUGA_RUBIN_08092023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_2888_AUTORISANT_DEBLOCAGE_SOMME_FCFA_390871_PROFIT_BITOTE_NGONO_ADELE_06092023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_2893_AUTORISANT_MANDATEMENT_SOMME_FCFA_310424_PROFIT_DIVERS_BENEFICIAIRES_08092023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_2896_AUTORISANT_MANDATEMENT_SOMME_FCFA_836260_PROFIT_NKWA_LINUS_EYOH_08092023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_2900_AUTORISANT_MANDATEMENT_SOMME_FCFA_500000_PROFIT_WASSOUO_08092023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3515_AUTORISANT_MANDATEMENT_SOMME_FCFA_2889900_PROFIT_NDOM_PAUL_12092023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3522_AUTORISANT_DELEGATION_CREDIT_SOMME_FCFA_105275560_PROFIT_PAYEUR_PERCEPTEUR_AMBACAM_PARIS_13092023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_3643_AUTORISANT_DEBLOCAGE_SOMME_FCFA_55662500_PROFIT_OUMAR_ALI_21092023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_2419_AUTORISANT_DEBLOCAGE_SOMME_FCFA_2316600_PROFIT_NSIA_.PDF
+      ❌ Rejeté (Format Invalide) : La fin du fichier ('') n'est pas une date à 8 chiffres.
+
+   [1/2] Analyse : FD_DECI_2420_AUTORISANT_DEBLOCAGE_SOMME_FCFA_13530070_TEMGA_NEE_WABOUE_VIVIANE_06092023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_2434_AUTORISANT_MANDATEMENT_SOMME_FCFA_5000000_NJOYA_MAMA_06092023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_2435_AUTORISANT_DEBLOCAGE_SOMME_FCFA_16714945_PROFIT_ATEMKENG_NANFACK_CLEMENT_AIME_06092023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_2439_AUTORISANT_MANDATEMENT_SOMME_FCFA_2167198_BEKOUNG_MICHELE_07092023.PDF
+      ⚠️ Échec (Timeout/Réseau) : page.goto: Timeout 120000ms exceeded.
+
+   [1/2] Analyse : FD_DECI_2887_AUTORISANT_DEBLOCAGE_SOMME_FCFA_33391328_MBALLA_ONANA_JOSEPH_PLACIDE_06092023.PDF
+
+      📡 [ALERTE] Connexion perdue avec le serveur (172.20.9.254) !
+      ⏳ L'automate active la STASE. Il reprendra dès le retour du réseau...
+      ✅ [RÉSEAU RÉTABLI] Connexion retrouvée ! Fin de la stase.
+
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_2889_AUTORISANT_DEBLOCAGE_SOMME_FCFA_2500788_KOUNTCHOU_MOYO_APOLLINAIRE_09092023.PDF
+
+      📡 [ALERTE] Connexion perdue avec le serveur (172.20.9.254) !
+      ⏳ L'automate active la STASE. Il reprendra dès le retour du réseau...
+      ✅ [RÉSEAU RÉTABLI] Connexion retrouvée ! Fin de la stase.
+
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_2890_AUTORISANT_DEBLOCAGE_SOMME_FCFA_9865525_ABOMO_ZEH_CECILE_06092023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_2892_AUTORISANT_MANDATEMENT_SOMME_FCFA_2775425_OMGBA_BELIBI_SEBASTIEN_08092023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_2894_AUTORISANT_DEBLOCAGE_SOMME_FCFA_4809427_FRANCIS_NGWA_NIBA_08092023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_2897_AUTORISANT_MANDATEMENT_SOMME_FCFA_1652823_NASSO_08092023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_2922_AUTORISANT_MANDATEMENT_SOMME_FCFA_3544461_NDAMBELE_EMMANUEL_14092023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_2923_AUTORISANT_DEBLOCAGE_SOMME_FCFA_12244440_MELINGUI_BERNADETTE_SERGINE_14092023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_2924_AUTORISANT_MANDATEMENT_SOMME_FCFA_68664_PROFIT_AMBONDJO_DJOBO_ROMUALD_14092023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_2927_AUTORISANT_MANDATEMENT_SOMME_FCFA_4420715_ELOCK_SIANG_LUDOVIC_14092023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_2928_AUTORISANT_MANDATEMENT_SOMME_FCFA_446477_AKAMBA_BIENVENU_14092023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      ⚠️ Échec (Timeout/Réseau) : page.waitForResponse: Timeout 180000ms exceeded while waiting for event "response"
+
+   [1/2] Analyse : FD_DECI_3521_AUTORISANT_DEBLOCAGE_SOMME_FCFA_8533790_NYAM_BIENVENU_NEE_NGOMBITANG_PAULINE_13092023.PDF
+      ⚠️ Échec (Timeout/Réseau) : page.goto: Timeout 120000ms exceeded.
+
+   [1/2] Analyse : FD_DECI_3526_AUTORISANT_DEBLOCAGE_SOMME_FCFA_22107810_KAMOGNE_NEE_MENGUE_NADINE_GERTRUDE_13092023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_3629_AUTORISANT_ANNULATION_BULLETIN_LIQUIDATION_RECETTE_FCFA_2267000_ETOGA_MICHEL_GASTON_20092023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   🔄 RÉESSAI local des 3 fichier(s)...
+
+   [2/2] Tentative de secours : FD_DECI_2439_AUTORISANT_MANDATEMENT_SOMME_FCFA_2167198_BEKOUNG_MICHELE_07092023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+      ✅ Succès au deuxième essai !
+
+   [2/2] Tentative de secours : FD_DECI_2928_AUTORISANT_MANDATEMENT_SOMME_FCFA_446477_AKAMBA_BIENVENU_14092023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+      ✅ Succès au deuxième essai !
+
+   [2/2] Tentative de secours : FD_DECI_3521_AUTORISANT_DEBLOCAGE_SOMME_FCFA_8533790_NYAM_BIENVENU_NEE_NGOMBITANG_PAULINE_13092023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+      ✅ Succès au deuxième essai !
+
+📂 [EXPLORATION] Analyse : /media/edithson/Saves/FONHOUO/Documents/MINFI/DPB/2024/FOND_DOSSIERS_DPB_15052024/INDEXES/FOND_DOSSIERS_DPB_15052024/2024
+   (Aucun PDF valide ici)
+
+📂 [EXPLORATION] Analyse : /media/edithson/Saves/FONHOUO/Documents/MINFI/DPB/2024/FOND_DOSSIERS_DPB_15052024/INDEXES/FOND_DOSSIERS_DPB_15052024/2024/AVRIL
+   📄 5 fichier(s) PDF trouvé(s).
+
+   [1/2] Analyse : FD_DECI_0840_AUTORISANT_MANDATEMENT_SOMME_FCFA_9329676_PROFIT_MBOUDOU_ATANGANA_HENRI_SIMON_01042024.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_0841_AUTORISANT_MANDATEMENT_SOMME_FCFA_5151140_PROFIT_ASSOMO_NANA_BARBINE_01042024.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_0845_AUTORISANT_MANDATEMENT_SOMME_FCFA_18431844_NGABADJI_BARTHELEMY_JUNIOR_01042024.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_0847_AUTORISANT_MANDATEMENT_SOMME_FCFA_6191162_PROFIT_NGO_MOUAHA_ANNIE_LYDIE_YOLANDE_01042024.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_0856_AUTORISANT_MANDATEMENT_SOMME_FCFA_6324929_PROFIT_ETENG_AVA_SAMUEL_BERTRAND_01042024.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+📂 [EXPLORATION] Analyse : /media/edithson/Saves/FONHOUO/Documents/MINFI/DPB/2024/FOND_DOSSIERS_DPB_15052024/INDEXES/FOND_DOSSIERS_DPB_15052024/2024/JANVIER
+   📄 3 fichier(s) PDF trouvé(s).
+
+   [1/2] Analyse : DECI_0260_AUTORISANT_ANNULATION_BULLETIN_LIQUIDATION_RECETTES_FCFA_91898480_PROFIT_AYINA_OHANDJA_LOUIS_MAX_31012024.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_38_TRANSMISSION_DOCUMENTS_20082024.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_FINALISATION_PROCESSUS_RESTRUCTION_CBC_15122023.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+📂 [EXPLORATION] Analyse : /media/edithson/Saves/FONHOUO/Documents/MINFI/DPB/2024/FOND_DOSSIERS_DPB_15052024/INDEXES/FOND_DOSSIERS_DPB_15052024/2024/MARS
+   📄 4 fichier(s) PDF trouvé(s).
+
+   [1/2] Analyse : FD_DECI_0789_AUTORISANT_DEBLOCAGE_SOMME_FCFA_1985448_TEUDAI_NEE_HADIDJATOU_NDAVE_TEKOM_26032024.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_0794_AUTORISANT_MANDATEMENT_SOMME_FCFA_5183100_NDONGO_ANGOULA_RAYMOND_26032024.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_0795_AUTORISANT_MANDATEMENT_SOMME_FCFA_9848032_MVOGO_JUSTIN_FRANC_26032024.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : FD_DECI_0796_AUTORISANT_MANDATEMENT_SOMME_FCFA_977481_NGAH_EMMANUEL_FON_26032024.PDF
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+======================================================================
+📊 RAPPORT FINAL D'ARCHIVAGE
+======================================================================
+✅ Total de fichiers intégrés et rangés : 226
+❌ Total de fichiers ignorés ou en échec : 2
+
+⚠️ Détail des anomalies (fichiers restés à leur place) :
+   - [FORMAT INVALIDE] /media/edithson/Saves/FONHOUO/Documents/MINFI/DPB/2024/FOND_DOSSIERS_DPB_15052024/INDEXES/FOND_DOSSIERS_DPB_15052024/2023/CRIS CHARGE/JUILLET_2023/Numérisation couleur rapide vers un fichier PDF_1_20240516161320379.PDF
+   - [FORMAT INVALIDE] /media/edithson/Saves/FONHOUO/Documents/MINFI/DPB/2024/FOND_DOSSIERS_DPB_15052024/INDEXES/FOND_DOSSIERS_DPB_15052024/2023/LEILA CHARGE/SEPTEMBRE/FD_DECI_2419_AUTORISANT_DEBLOCAGE_SOMME_FCFA_2316600_PROFIT_NSIA_.PDF
+======================================================================
+
+🛑 Mission terminée.
+edithson@edithson-ThinkPad-T490:/media/edithson/Saves/Projets/Automates/Archidoc_RH$ node automate.js
+
+🚀 Lancement de l'automate intelligent...
+Vérification de l'accès et authentification...
+🔐 Authentification requise...
+🔓 Connecté avec succès !
+
+📂 [EXPLORATION] Analyse : /media/edithson/Saves/FONHOUO/Documents/MINFI/DPB/T/2023/FD_DPB/FONDS DE DECISIONS DPB 2021 13062023/T
+   📄 2 fichier(s) PDF trouvé(s).
+
+   [1/2] Analyse : DECI_102_CONSTANTANT_DECES_EPOUPA_MAURICE_MLE_656039F_INDEMNITE_DECES_ALLOCATION_SURVIVANTS_AYANTS_DROITS_30082021.pdf
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : ESD_EMVOUDOU_NGONG_MARIE_MERVEILLE_AYANT_DROIT_FEUE_NGONG_NEE_OKOA_MARGUERITE_CHARLOTTE_21052021.pdf
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+======================================================================
+📊 RAPPORT FINAL D'ARCHIVAGE
+======================================================================
+✅ Total de fichiers intégrés et rangés : 2
+❌ Total de fichiers ignorés ou en échec : 0
+======================================================================
+
+🛑 Mission terminée.
+edithson@edithson-ThinkPad-T490:/media/edithson/Saves/Projets/Automates/Archidoc_RH$ 
+

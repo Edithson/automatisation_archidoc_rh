@@ -4,7 +4,7 @@ const path = require('path');
 const http = require('http');
 
 // --- CONFIGURATION ---
-const DOSSIER_RACINE = '/media/edithson/Saves/FONHOUO/Documents/MINFI/DPB/T/2023/FD_DPB/FONDS DE DECISIONS DPB 2021 13062023/T';
+const DOSSIER_RACINE = '/media/edithson/Ventoy/DREF';
 const NOM_DOSSIER_SUCCES = 'Fichiers_Archives_Succes';
 const URL_ARCHIVES = 'http://172.20.9.254:8000/archives';
 
@@ -13,10 +13,31 @@ const DICTIONNAIRE_NATURES = {
     'DECI': 'DECISIONS',
     'FD': 'FONDS DE DOSSIER',
     'ESD': 'ESD',
-    'NOTE': 'NOTE'
+    'NOTE': 'NOTE',
+    'COMMUNIQUE': 'COMMUNIQUES',
+    'CONVOCATION': 'CONVOCATIONS',
+    'COURA': 'COURRIERS',
+    'ST': 'SOIT-TRANSMIS',
+    'INVITATION': 'INVITATIONS',
+    'COURRIERS': 'COURRIERS',
+    'ATTESTATION': 'ATTESTATIONS',
+    'MARCHE': 'MARCHE',
+    'INSTRUCTIONS': 'INSTRUCTIONS',
+    'CONSTITUTION': 'CONSTITUTION',
+    'LOI': 'LOI',
+    'LETTRE-DE-MISSION': 'LETTRE DE MISSION',
+    'ARRETE': 'ARRETE',
+    'DECRET': 'DECRET',
+    'DOSSIER-DU-PERSONNEL': 'DOSSIER DU PERSONNEL',
+    'DOSSIER-DES-PENSIONS': 'DOSSIER DES PENSIONS',
+    'RAPPORTS': 'RAPPORTS',
+    'DECISIONS': 'DECISIONS',
+    'FONDS-DE-DOSSIER': 'FONDS DE DOSSIER'
 };
 
 const VALEURS_AUTORISEES = [
+    "ATTESTATIONS", "MARCHE", "COMMUNIQUES",
+    "SOIT-TRANSMIS", "CONVOCATIONS", "COURRIERS", "INVITATIONS",
     "INSTRUCTIONS", "CONSTITUTION", "LOI", "LETTRE DE MISSION", "ARRETE",
     "DECRET", "DOSSIER DU PERSONNEL", "ESD", "DOSSIER DES PENSIONS",
     "RAPPORTS", "NOTE", "DECISIONS", "FONDS DE DOSSIER"
@@ -106,7 +127,7 @@ async function traiterFichier(page, cheminComplet, infosFichier) {
     await page.locator('select[name="emplacement2"]').selectOption('Serveur', { force: true });
     await page.locator('#rayon').fill('B6');
     await page.locator('#cote').fill('C1560-40DE.10');
-    await page.locator('select:has(option[value="DPB"])').selectOption('DPB', { force: true });
+    await page.locator('select:has(option[value="DREF"])').selectOption('DREF', { force: true });
 
     await page.locator('button:has-text("Suivant")').click();
 

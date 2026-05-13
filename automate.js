@@ -4,7 +4,7 @@ const path = require('path');
 const http = require('http');
 
 // --- CONFIGURATION ---
-const DOSSIER_RACINE = '/media/edithson/Ventoy/DREF';
+const DOSSIER_RACINE = "/media/edithson/GZ/MINFI/Nouveau/SGCCC/2023/SGCCC/SGCCC/DECISIONS SGCCC30112022/MAI 2022";
 const NOM_DOSSIER_SUCCES = 'Fichiers_Archives_Succes';
 const URL_ARCHIVES = 'http://172.20.9.254:8000/archives';
 
@@ -32,7 +32,12 @@ const DICTIONNAIRE_NATURES = {
     'DOSSIER-DES-PENSIONS': 'DOSSIER DES PENSIONS',
     'RAPPORTS': 'RAPPORTS',
     'DECISIONS': 'DECISIONS',
-    'FONDS-DE-DOSSIER': 'FONDS DE DOSSIER'
+    'FONDS-DE-DOSSIER': 'FONDS DE DOSSIER',
+    'LETTRE': 'LETTRE DE MISSION',
+    'RAPPORT': 'RAPPORTS',
+    'FICHE': 'DOSSIER DU PERSONNEL',
+    'CERTIF': 'DOSSIER DU PERSONNEL',
+    'BE': 'BONS D\'ENGAGEMENT'
 };
 
 const VALEURS_AUTORISEES = [
@@ -40,7 +45,7 @@ const VALEURS_AUTORISEES = [
     "SOIT-TRANSMIS", "CONVOCATIONS", "COURRIERS", "INVITATIONS",
     "INSTRUCTIONS", "CONSTITUTION", "LOI", "LETTRE DE MISSION", "ARRETE",
     "DECRET", "DOSSIER DU PERSONNEL", "ESD", "DOSSIER DES PENSIONS",
-    "RAPPORTS", "NOTE", "DECISIONS", "FONDS DE DOSSIER"
+    "RAPPORTS", "NOTE", "DECISIONS", "FONDS DE DOSSIER", "BONS D'ENGAGEMENT"
 ];
 
 let totalFichiersReussis = 0;
@@ -127,7 +132,7 @@ async function traiterFichier(page, cheminComplet, infosFichier) {
     await page.locator('select[name="emplacement2"]').selectOption('Serveur', { force: true });
     await page.locator('#rayon').fill('B6');
     await page.locator('#cote').fill('C1560-40DE.10');
-    await page.locator('select:has(option[value="DREF"])').selectOption('DREF', { force: true });
+    await page.locator('select:has(option[value="SGCCC"])').selectOption('SGCCC', { force: true });
 
     await page.locator('button:has-text("Suivant")').click();
 
@@ -273,10 +278,10 @@ async function parcourirEtTraiterDossier(dossierActuel, page) {
     console.log(`✅ Total de fichiers intégrés et rangés : ${totalFichiersReussis}`);
     console.log(`❌ Total de fichiers ignorés ou en échec : ${listeGlobaleEchecs.length}`);
 
-    if (listeGlobaleEchecs.length > 0) {
-        console.log("\n⚠️ Détail des anomalies (fichiers restés à leur place) :");
-        listeGlobaleEchecs.forEach(chemin => console.log(`   - ${chemin}`));
-    }
+    // if (listeGlobaleEchecs.length > 0) {
+    //     console.log("\n⚠️ Détail des anomalies (fichiers restés à leur place) :");
+    //     listeGlobaleEchecs.forEach(chemin => console.log(`   - ${chemin}`));
+    // }
     console.log("=".repeat(70));
 
     console.log("\n🛑 Mission terminée.");

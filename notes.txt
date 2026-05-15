@@ -15,6 +15,7 @@ Historique de traitement à partir du 29/04/2026 à 11:45
 /media/edithson/GZ/MINFI/Nouveau/SGCCC/2023/SGCCC/SGCCC/DECISIONS SGCCC30112022/AOUT 2022
 /media/edithson/GZ/MINFI/Nouveau/SGCCC/2023/SGCCC/SGCCC/DECISIONS SGCCC30112022/DECI_MARS_SDCF 2022
 /media/edithson/GZ/MINFI/Nouveau/SGCCC/2023/SGCCC/SGCCC/DECISIONS SGCCC30112022/MAI 2022
+/media/edithson/GZ/MINFI/Nouveau/SGCCC/2023/SGCCC/SGCCC/DECISIONS SGCCC30112022/Decision 2020
 
 ======================================================================
 📊 RAPPORT FINAL D'ARCHIVAGE
@@ -151,3 +152,6 @@ Total semaine : SGCCC = 1504
 ✅ Total de fichiers intégrés et rangés : 79
 ❌ Total de fichiers ignorés ou en échec : 0
 ======================================================================
+
+124+342 = 466
+124+342+79+25+25+235+247+298 = 1375

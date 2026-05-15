@@ -4,7 +4,7 @@ const path = require('path');
 const http = require('http');
 
 // --- CONFIGURATION ---
-const DOSSIER_RACINE = "/media/edithson/GZ/MINFI/Nouveau/SGCCC/2023/SGCCC/SGCCC/DECISIONS SGCCC30112022/MAI 2022";
+const DOSSIER_RACINE = "/media/edithson/GZ/MINFI/Nouveau/SGCCC/2023/SGCCC/SGCCC/DECISIONS SGCCC30112022/Decision 2020";
 const NOM_DOSSIER_SUCCES = 'Fichiers_Archives_Succes';
 const URL_ARCHIVES = 'http://172.20.9.254:8000/archives';
 

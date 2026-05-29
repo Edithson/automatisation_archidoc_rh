@@ -16,6 +16,11 @@ Historique de traitement à partir du 29/04/2026 à 11:45
 /media/edithson/GZ/MINFI/Nouveau/SGCCC/2023/SGCCC/SGCCC/DECISIONS SGCCC30112022/DECI_MARS_SDCF 2022
 /media/edithson/GZ/MINFI/Nouveau/SGCCC/2023/SGCCC/SGCCC/DECISIONS SGCCC30112022/MAI 2022
 /media/edithson/GZ/MINFI/Nouveau/SGCCC/2023/SGCCC/SGCCC/DECISIONS SGCCC30112022/Decision 2020
+/media/edithson/GZ/MINFI/Nouveau/SGCCC/2023/SGCCC/SGCCC/FONDS DE DECISION SGCCC CRIS 23032023/lot 24032023
+/media/edithson/GZ/MINFI/Nouveau/SGCCC/2023/SGCCC/SGCCC/FONDS DE DECISION SGCCC CRIS 23032023/FD-S-2-5
+/media/edithson/GZ/MINFI/Nouveau/SGCCC/2023/SGCCC/SGCCC/FONDS DE DECISION SGCCC CRIS 23032023/FD-S-4-1
+/media/edithson/GZ/MINFI/Nouveau/SGCCC/2023/SGCCC/SGCCC/FONDS DE DECISION SGCCC CRIS 23032023/FD-S-3-1
+/media/edithson/GZ/MINFI/Nouveau/SGCCC/2023/SGCCC/SGCCC/FONDS DE DECISION SGCCC CRIS 23032023/Nouveau dossier/FD-1-6
 
 ======================================================================
 📊 RAPPORT FINAL D'ARCHIVAGE
@@ -155,3 +160,67 @@ Total semaine : SGCCC = 1504
 
 124+342 = 466
 124+342+79+25+25+235+247+298 = 1375
+
+################################
+
+======================================================================
+📊 RAPPORT FINAL D'ARCHIVAGE
+======================================================================
+✅ Total de fichiers intégrés et rangés : 191
+❌ Total de fichiers ignorés ou en échec : 14
+======================================================================
+
+======================================================================
+📊 RAPPORT FINAL D'ARCHIVAGE
+======================================================================
+✅ Total de fichiers intégrés et rangés : 117
+❌ Total de fichiers ignorés ou en échec : 1
+======================================================================
+
+Total SGCCC approccimatif : ~720
+
+################################
+
+======================================================================
+📊 RAPPORT FINAL D'ARCHIVAGE
+======================================================================
+✅ Total de fichiers intégrés et rangés : 237
+❌ Total de fichiers ignorés ou en échec : 471
+======================================================================
+
+======================================================================
+📊 RAPPORT FINAL D'ARCHIVAGE
+======================================================================
+✅ Total de fichiers intégrés et rangés : 105
+❌ Total de fichiers ignorés ou en échec : 6
+======================================================================
+
+======================================================================
+📊 RAPPORT FINAL D'ARCHIVAGE
+======================================================================
+✅ Total de fichiers intégrés et rangés : 350
+❌ Total de fichiers ignorés ou en échec : 22
+======================================================================
+
+======================================================================
+📊 RAPPORT FINAL D'ARCHIVAGE
+======================================================================
+✅ Total de fichiers intégrés et rangés : 223
+❌ Total de fichiers ignorés ou en échec : 7
+======================================================================
+
+======================================================================
+📊 RAPPORT FINAL D'ARCHIVAGE
+======================================================================
+✅ Total de fichiers intégrés et rangés : 120
+❌ Total de fichiers ignorés ou en échec : 9
+======================================================================
+
+======================================================================
+📊 RAPPORT FINAL D'ARCHIVAGE
+======================================================================
+✅ Total de fichiers intégrés et rangés : 149
+❌ Total de fichiers ignorés ou en échec : 4
+======================================================================
+
+Total : 237+105+350+223+120+149 = 1184

@@ -45,3 +45,34 @@
 
 🛑 Mission terminée.
 edithson@edithson-ThinkPad-T490:/media/edithson/Saves/Projets/Automates/Archidoc_RH$ 
+
+
+
+   [1/2] Analyse : DECI_2679_AUTORISANT_PAIEMENT_FCFA_3107186314_BONI_KIMYA_SAN_G927386_27082018.pdf
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_2680_AUTORISANT_DEBLOCAGE_FCFA_77676600_MINDEF_G936227_27082018.pdf
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_2681_AUTORISANT_DEBLOCAGE_FCFA_20000000_MBALLA_ZANG_MARIE_JOSEPH_G927280_27082018.pdf
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_2682_AUTORISANT_DEBLOCAGE_FCFA_5000000_NGOH_NGOH_FERDINAND_G936226_27082018.pdf
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_2683_AUTORISANT_DEBLOCAGE_FCFA_5000000_LEJEUNE_MBELLA_MBELLA_G936229_27082018.pdf
+      ⚠️ Échec (Timeout/Réseau) : page.goto: Timeout 120000ms exceeded.
+
+   [1/2] Analyse : DECI_2683_AUTORISANT_DEBLOCAGE_FCFA_5000000_LEJEUNE_MBELLA_MBELLA_MINREX_G936229_27082018.pdf
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      -> ✅ Upload confirmé par le serveur !
+
+   [1/2] Analyse : DECI_2684_AUTORISANT_DEBLOCAGE_FCFA_3000000_NGUENE_PAULINE_IRENE_MINAS_G927282_23082018.pdf
+      -> Étape 3 : Validation... (Attente réseau : max 180s)
+      ⚠️ Échec (Timeout/Réseau) : page.waitForResponse: Timeout 180000ms exceeded while waiting for event "response"
+
+   [1/2] Analyse : DECI_2689_AUTORISANT_MANDATEMENT_FCFA_1934000_SADI_RENE_EMMANUEL_G900689_31082018.pdf

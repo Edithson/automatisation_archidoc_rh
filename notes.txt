@@ -21,6 +21,7 @@ Historique de traitement à partir du 29/04/2026 à 11:45
 /media/edithson/GZ/MINFI/Nouveau/SGCCC/2023/SGCCC/SGCCC/FONDS DE DECISION SGCCC CRIS 23032023/FD-S-4-1
 /media/edithson/GZ/MINFI/Nouveau/SGCCC/2023/SGCCC/SGCCC/FONDS DE DECISION SGCCC CRIS 23032023/FD-S-3-1
 /media/edithson/GZ/MINFI/Nouveau/SGCCC/2023/SGCCC/SGCCC/FONDS DE DECISION SGCCC CRIS 23032023/Nouveau dossier/FD-1-6
+/run/media/edithson/GZ/MINFI/Nouveau/SDCF
 
 ======================================================================
 📊 RAPPORT FINAL D'ARCHIVAGE
@@ -224,3 +225,8 @@ Total SGCCC approccimatif : ~720
 ======================================================================
 
 Total : 237+105+350+223+120+149 = 1184
+
+#################
+
+122 DCOB
+SGCCC

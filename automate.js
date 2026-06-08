@@ -4,7 +4,7 @@ const path = require('path');
 const http = require('http');
 
 // --- CONFIGURATION ---
-const DOSSIER_RACINE = "/media/edithson/GZ/MINFI/Nouveau/SGCCC/2023/SGCCC/SGCCC/FONDS DE DECISION SGCCC CRIS 23032023/Nouveau dossier/FD-1-6";
+const DOSSIER_RACINE = "/run/media/edithson/GZ/MINFI/New folder/11";
 const NOM_DOSSIER_SUCCES = 'Fichiers_Archives_Succes';
 const URL_ARCHIVES = 'http://172.20.9.254:8000/archives';
 
@@ -18,6 +18,7 @@ const DICTIONNAIRE_NATURES = {
     'CONVOCATION': 'CONVOCATIONS',
     'COURA': 'COURRIERS',
     'ST': 'SOIT-TRANSMIS',
+    'SOIT': 'SOIT-TRANSMIS',
     'INVITATION': 'INVITATIONS',
     'COURRIERS': 'COURRIERS',
     'ATTESTATION': 'ATTESTATIONS',
@@ -132,7 +133,7 @@ async function traiterFichier(page, cheminComplet, infosFichier) {
     await page.locator('select[name="emplacement2"]').selectOption('Serveur', { force: true });
     await page.locator('#rayon').fill('B6');
     await page.locator('#cote').fill('C1560-40DE.10');
-    await page.locator('select:has(option[value="SGCCC"])').selectOption('SGCCC', { force: true });
+    await page.locator('select:has(option[value="DCOB"])').selectOption('DCOB', { force: true });
 
     await page.locator('button:has-text("Suivant")').click();
 

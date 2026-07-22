@@ -71,7 +71,7 @@ edithson@edithson-ThinkPad-T490:/media/edithson/Saves/Projets/Automates/Archidoc
       -> Étape 3 : Validation... (Attente réseau : max 180s)
       -> ✅ Upload confirmé par le serveur !
 
-   [1/2] Analyse : DECI_2684_AUTORISANT_DEBLOCAGE_FCFA_3000000_NGUENE_PAULINE_IRENE_MINAS_G927282_23082018.pdf
+   [1/2] Analyse : c.pdf
       -> Étape 3 : Validation... (Attente réseau : max 180s)
       ⚠️ Échec (Timeout/Réseau) : page.waitForResponse: Timeout 180000ms exceeded while waiting for event "response"
 

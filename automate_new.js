@@ -4,17 +4,17 @@ const path = require('path');
 const http = require('http');
 
 // --- CONFIGURATION ---
-const DOSSIER_RACINE = "/media/edithson/Ventoy/SGCCC/2023/SGCCC/SGCCC/FONDS DE DECISION SGCCC CRIS 23032023/";
+const DOSSIER_RACINE = "/media/edithson/Ventoy/SGCCC/2023/SGCCC/SGCCC 2022_2023/SGCCC/SGCCC/";
 const NOM_DOSSIER_SUCCES = 'Fichiers_Archives_Succes';
 const URL_ARCHIVES = 'http://172.20.9.254:8000/archives';
 
-// 💥 Variable pour définir le séparateur du nom de fichier (' ' ou '_') et le service cible
+// Variable pour définir le séparateur du nom de fichier (' ' ou '_') et le service cible
 const SEPARATEUR_NOM_FICHIER = '_'; 
 const SERVICE_CIBLE = 'SGCCC';
 
 // --- DICTIONNAIRE INTELLIGENT ---
 const DICTIONNAIRE_NATURES = {
-    'DECI': 'DECISIONS', 'FD': 'FONDS DE DOSSIER', 'ESD': 'ESD', 'NOTE': 'NOTE',
+    'DECI': 'DECISIONS', 'FD': 'FONDS DE DOSSIER', 'ESD': 'ETATS DE SOMMES DUES', 'NOTE': 'NOTE DE SERVICE',
     'COMMUNIQUE': 'COMMUNIQUES', 'CONVOCATION': 'CONVOCATIONS', 'COURA': 'COURRIERS',
     'ST': 'SOIT-TRANSMIS', 'SOIT': 'SOIT-TRANSMIS', 'INVITATION': 'INVITATIONS',
     'COURRIERS': 'COURRIERS', 'ATTESTATION': 'ATTESTATIONS', 'MARCHE': 'MARCHE',
@@ -72,8 +72,7 @@ const DICTIONNAIRE_NATURES = {
     'STAGE': 'AUTRES TYPES DE DOCUMENTS', 'SYNTHESE': 'AUTRES TYPES DE DOCUMENTS',
     'TERMES': 'AUTRES TYPES DE DOCUMENTS', 'TRAITEMENT': 'AUTRES TYPES DE DOCUMENTS',
     'TRANSMISSION': 'AUTRES TYPES DE DOCUMENTS', 'TRAVAUX': 'AUTRES TYPES DE DOCUMENTS',
-    'VISA': 'AUTRES TYPES DE DOCUMENTS', 'BORDEREAUX': 'BORDEREAUX', 'CESSATION': 'BORDEREAUX',
-    'ESD': 'ETATS DE SOMMES DUES', 'NOTE': 'NOTE DE SERVICE'
+    'VISA': 'AUTRES TYPES DE DOCUMENTS', 'BORDEREAUX': 'BORDEREAUX', 'CESSATION': 'BORDEREAUX'
 };
 
 const VALEURS_AUTORISEES = [
@@ -94,8 +93,6 @@ let listeGlobaleEchecs = [];
 // ==========================================
 function validerEtExtraireInfos(nomFichier) {
     const nomSansExt = nomFichier.replace(/\.pdf$/i, '');
-    
-    // 💥 NOUVEAU : On utilise la variable dynamique ici
     const parts = nomSansExt.split(SEPARATEUR_NOM_FICHIER); 
 
     if (parts.length < 3) {
@@ -160,24 +157,14 @@ async function ecouterReseauEtMettreEnPause() {
 // 3. FONCTION CORE : UPLOAD 
 // ==========================================
 async function traiterFichier(page, cheminComplet, infosFichier) {
-    await page.goto(URL_ARCHIVES, { waitUntil: 'domcontentloaded', timeout: 120000 });
-    
     await page.waitForSelector('select[name="format"]', { state: 'attached', timeout: 90000 });
     await page.locator('select[name="format"]').selectOption('Document PDF', { force: true });
     
-    // 💥 NOUVEAU : Gestion du composant Autocomplete React/JS
-    // 1. On remplit le champ input
     await page.locator('#typearchive').fill(infosFichier.natureDocument);
-    
-    // 2. On attend que la liste <ul> apparaisse et on cible le bouton 
-    // qui contient le texte exact de la nature du document
     const dropdownOption = page.locator('ul.absolute button', { hasText: infosFichier.natureDocument });
-    
-    // 3. On attend que ce bouton soit visible, puis on clique dessus pour valider le composant
     await dropdownOption.waitFor({ state: 'visible', timeout: 5000 });
     await dropdownOption.click();
 
-    // Reste du remplissage classique
     await page.locator('#description').fill(infosFichier.nomSansExt);
     await page.locator('#date_doc').fill(infosFichier.dateFormatee);
     await page.locator('select:has(option[value="DGB"])').selectOption('DGB', { force: true });
@@ -203,9 +190,13 @@ async function traiterFichier(page, cheminComplet, infosFichier) {
 
     await boutonValider.click();
     await reponseServeurPromise;
-
     console.log("      -> ✅ Upload confirmé par le serveur !");
-    await page.waitForTimeout(1000);
+    
+    await page.waitForTimeout(1000); 
+    console.log("      -> 🔄 Réinitialisation du formulaire...");
+    await page.locator('a:has-text("Nouvelle Archive")').click();
+    
+    await page.waitForSelector('select[name="format"]', { state: 'attached', timeout: 30000 });
 }
 
 // ==========================================
@@ -228,19 +219,22 @@ async function parcourirEtTraiterDossier(dossierActuel, page) {
 
     if (fichiersPDF.length > 0) {
         console.log(`   📄 ${fichiersPDF.length} fichier(s) PDF trouvé(s).`);
-
         let echecsLocaux = [];
-        let succesLocaux = [];
 
         for (const nomFichier of fichiersPDF) {
             const cheminComplet = path.join(dossierActuel, nomFichier);
             try {
                 console.log(`\n   [1/2] Analyse : ${nomFichier}`);
-
                 const infosExtraites = validerEtExtraireInfos(nomFichier);
                 await ecouterReseauEtMettreEnPause();
+                
                 await traiterFichier(page, cheminComplet, infosExtraites);
-                succesLocaux.push(nomFichier);
+                
+                const cheminDossierSucces = path.join(dossierActuel, NOM_DOSSIER_SUCCES);
+                if (!fs.existsSync(cheminDossierSucces)) fs.mkdirSync(cheminDossierSucces);
+                fs.renameSync(cheminComplet, path.join(cheminDossierSucces, nomFichier));
+                
+                totalFichiersReussis++;
 
             } catch (e) {
                 if (e.message.startsWith('STRUCTURE_INVALIDE')) {
@@ -249,6 +243,7 @@ async function parcourirEtTraiterDossier(dossierActuel, page) {
                 } else {
                     console.error(`      ⚠️ Échec (Timeout/Réseau) : ${e.message.split('\n')[0]}`);
                     echecsLocaux.push(nomFichier);
+                    await page.goto(URL_ARCHIVES, { waitUntil: 'domcontentloaded', timeout: 90000 }).catch(() => {});
                 }
             }
         }
@@ -263,31 +258,23 @@ async function parcourirEtTraiterDossier(dossierActuel, page) {
                 try {
                     console.log(`\n   [2/2] Tentative de secours : ${nomFichier}`);
                     const infosExtraites = validerEtExtraireInfos(nomFichier);
-
                     await ecouterReseauEtMettreEnPause();
+                    
                     await traiterFichier(page, cheminComplet, infosExtraites);
 
-                    succesLocaux.push(nomFichier);
+                    const cheminDossierSucces = path.join(dossierActuel, NOM_DOSSIER_SUCCES);
+                    if (!fs.existsSync(cheminDossierSucces)) fs.mkdirSync(cheminDossierSucces);
+                    fs.renameSync(cheminComplet, path.join(cheminDossierSucces, nomFichier));
+                    
+                    totalFichiersReussis++;
                     console.log(`      ✅ Succès au deuxième essai !`);
+                    
                 } catch (e) {
                     console.error(`      ❌ Échec définitif : ${nomFichier}`);
                     listeGlobaleEchecs.push(`[ÉCHEC TECHNIQUE] ${cheminComplet}`);
+                    await page.goto(URL_ARCHIVES, { waitUntil: 'domcontentloaded', timeout: 90000 }).catch(() => {});
                 }
             }
-        }
-
-        if (succesLocaux.length > 0) {
-            const cheminDossierSucces = path.join(dossierActuel, NOM_DOSSIER_SUCCES);
-            if (!fs.existsSync(cheminDossierSucces)) fs.mkdirSync(cheminDossierSucces);
-
-            for (const fichier of succesLocaux) {
-                const ancienChemin = path.join(dossierActuel, fichier);
-                const nouveauChemin = path.join(cheminDossierSucces, fichier);
-                try {
-                    fs.renameSync(ancienChemin, nouveauChemin);
-                } catch (err) { }
-            }
-            totalFichiersReussis += succesLocaux.length;
         }
     } else {
         console.log(`   (Aucun PDF valide ici)`);
@@ -336,6 +323,28 @@ async function parcourirEtTraiterDossier(dossierActuel, page) {
          listeGlobaleEchecs.forEach(chemin => console.log(`   - ${chemin}`));
     }
     console.log("=".repeat(70));
+
+    // 💥 NOUVEAU : Enregistrement dans statistique.txt
+    if (totalFichiersReussis > 0) {
+        // __dirname récupère automatiquement le chemin du dossier où se trouve le script automate.js
+        const cheminFichierStats = path.join(__dirname, 'statistique.txt');
+        
+        // Formatage de la date et de l'heure locales
+        const dateActuelle = new Date();
+        const dateAffichage = dateActuelle.toLocaleDateString();
+        const heureAffichage = dateActuelle.toLocaleTimeString();
+        
+        // La ligne à insérer (avec un \n à la fin pour préparer la ligne suivante)
+        const ligneStatistique = `[${dateAffichage} à ${heureAffichage}] - Fichiers chargés : ${totalFichiersReussis}\n`;
+        
+        try {
+            // appendFileSync crée le fichier s'il n'existe pas, ou écrit à la fin s'il existe
+            fs.appendFileSync(cheminFichierStats, ligneStatistique, 'utf8');
+            console.log(`\n📝 Statistiques de session enregistrées dans : ${cheminFichierStats}`);
+        } catch (erreur) {
+            console.error(`\n❌ Impossible d'écrire dans le fichier de statistiques :`, erreur.message);
+        }
+    }
 
     console.log("\n🛑 Mission terminée.");
     await browser.close();

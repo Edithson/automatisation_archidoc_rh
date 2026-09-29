@@ -4,13 +4,13 @@ const path = require('path');
 const http = require('http');
 
 // --- CONFIGURATION ---
-const DOSSIER_RACINE = "/media/edithson/Ventoy/SGCCC/2023/SGCCC/SGCCC 2022_2023/SGCCC/SGCCC/";
+const DOSSIER_RACINE = "/media/edithson/Ventoy/Dossiers Admin/13";
 const NOM_DOSSIER_SUCCES = 'Fichiers_Archives_Succes';
 const URL_ARCHIVES = 'http://172.20.9.254:8000/archives';
 
 // Variable pour définir le séparateur du nom de fichier (' ' ou '_') et le service cible
-const SEPARATEUR_NOM_FICHIER = '_'; 
-const SERVICE_CIBLE = 'SGCCC';
+const SEPARATEUR_NOM_FICHIER = ' '; 
+const SERVICE_CIBLE = 'SO';
 
 // --- DICTIONNAIRE INTELLIGENT ---
 const DICTIONNAIRE_NATURES = {

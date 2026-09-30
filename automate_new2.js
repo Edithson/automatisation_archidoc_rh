@@ -4,7 +4,7 @@ const path = require('path');
 const http = require('http');
 
 // --- CONFIGURATION ---
-const DOSSIER_RACINE = "/media/edithson/Ventoy/Dossiers Admin/5";
+const DOSSIER_RACINE = "/media/edithson/Ventoy/Dossiers Admin/6";
 const NOM_DOSSIER_SUCCES = 'Fichiers_Archives_Succes';
 const URL_ARCHIVES = 'http://172.20.9.254:8000/archives';
 

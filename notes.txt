@@ -18,3 +18,13 @@
 ✅ Total de fichiers intégrés et rangés : 401
 ❌ Total de fichiers ignorés ou en échec : 122
 ======================================================================
+
+
+
+
+
+Stat septembre
+SGCCC : 8105
+SO : 5693
+DCOB : 274
+Total : 14072

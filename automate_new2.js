@@ -4,7 +4,7 @@ const path = require('path');
 const http = require('http');
 
 // --- CONFIGURATION ---
-const DOSSIER_RACINE = "/media/edithson/Ventoy/Dossiers Admin/";
+const DOSSIER_RACINE = "/media/edithson/Ventoy/DCOB 26";
 const NOM_DOSSIER_SUCCES = 'Fichiers_Archives_Succes';
 const URL_ARCHIVES = 'http://172.20.9.254:8000/archives';
 const user_login = 'cyril.fonyuy';
@@ -13,7 +13,7 @@ const old_login = 'archive@mail.com';
 
 // Variable pour définir le séparateur du nom de fichier (' ' ou '_') et le service cible
 const SEPARATEUR_NOM_FICHIER = ' '; 
-const SERVICE_CIBLE = 'SO';
+const SERVICE_CIBLE = 'DCOB';
 
 // --- DICTIONNAIRE INTELLIGENT ---
 const DICTIONNAIRE_NATURES = {

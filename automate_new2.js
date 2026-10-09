@@ -158,21 +158,18 @@ async function ecouterReseauEtMettreEnPause() {
 }
 
 // ==========================================
-// 3. FONCTION CORE : UPLOAD (Nouveau Flux en 2 étapes)
+// 3. FONCTION CORE : UPLOAD (Sécurisée)
 // ==========================================
 async function traiterFichier(page, cheminComplet, infosFichier) {
-    // 💥 NOUVEAU FLUX - ÉTAPE 1 : Upload
-    // Même si l'input est caché sous la div de glisser-déposer, Playwright s'y accroche
+    // 💥 ÉTAPE 1 : Upload
     await page.waitForSelector('input[type="file"]', { state: 'attached', timeout: 90000 });
     await page.locator('input[type="file"]').setInputFiles(cheminComplet);
 
-    // Clic pour passer à l'étape des métadonnées
     const btnSuivant = page.locator('button:has-text("Étape suivante : Métadonnées")');
     await btnSuivant.waitFor({ state: 'visible', timeout: 30000 });
     await btnSuivant.click();
 
-    // 💥 NOUVEAU FLUX - ÉTAPE 2 : Métadonnées
-    // On s'assure que le formulaire de l'étape 2 est bien affiché avant de continuer
+    // 💥 ÉTAPE 2 : Métadonnées
     await page.waitForSelector('select[name="format"]', { state: 'attached', timeout: 90000 });
     await page.locator('select[name="format"]').selectOption('Document PDF', { force: true });
     
@@ -182,20 +179,31 @@ async function traiterFichier(page, cheminComplet, infosFichier) {
     await dropdownOption.waitFor({ state: 'visible', timeout: 5000 });
     await dropdownOption.click();
 
-    // La méthode .fill() écrase automatiquement le texte généré par l'appli !
     await page.locator('#description').fill(infosFichier.nomSansExt);
-    
     await page.locator('#date_doc').fill(infosFichier.dateFormatee);
     
-    // Tu utilisais 'DGB' dans le code, je le laisse comme référence
-    await page.locator('select:has(option[value="DGB"])').selectOption('DGB', { force: true }); 
-    await page.locator('select:has(option[value="Serveur"])').selectOption('Serveur', { force: true });
+    // 💥 NOUVEAU : Remplissage conditionnel (Anti-Crash pour comptes restreints)
+    // On vérifie que l'élément existe (.count() > 0) avant de tenter d'agir dessus
     
-    await page.locator('#rayon').fill('B6');
-    await page.locator('#cote').fill('C1560-40DE.10');
+    if (await page.locator('select:has(option[value="DGB"])').count() > 0) {
+        await page.locator('select:has(option[value="DGB"])').selectOption('DGB', { force: true });
+    }
     
-    // Le groupe d'accès est dynamique grâce à la variable
-    await page.locator(`select:has(option[value="${SERVICE_CIBLE}"])`).selectOption(SERVICE_CIBLE, { force: true });
+    if (await page.locator('select:has(option[value="Serveur"])').count() > 0) {
+        await page.locator('select:has(option[value="Serveur"])').selectOption('Serveur', { force: true });
+    }
+    
+    if (await page.locator('#rayon').count() > 0) {
+        await page.locator('#rayon').fill('B6');
+    }
+    
+    if (await page.locator('#cote').count() > 0) {
+        await page.locator('#cote').fill('C1560-40DE.10');
+    }
+    
+    if (await page.locator(`select:has(option[value="${SERVICE_CIBLE}"])`).count() > 0) {
+        await page.locator(`select:has(option[value="${SERVICE_CIBLE}"])`).selectOption(SERVICE_CIBLE, { force: true });
+    }
 
     // 💥 VALIDATION
     const boutonValider = page.locator('button:has-text("Valider & Créer l\'archive")');
@@ -209,8 +217,6 @@ async function traiterFichier(page, cheminComplet, infosFichier) {
     );
 
     await boutonValider.click();
-    
-    // C'est ici que l'automate attend la confirmation silencieuse du serveur
     await reponseServeurPromise;
     console.log("      -> ✅ Upload confirmé par le serveur !");
     
@@ -219,7 +225,6 @@ async function traiterFichier(page, cheminComplet, infosFichier) {
     console.log("      -> 🔄 Réinitialisation du formulaire via le menu latéral...");
     await page.locator('a:has-text("Nouvelle Archive")').click();
     
-    // Sécurité : On attend que le champ d'upload (Étape 1) soit de retour avant de rendre la main à la boucle
     await page.waitForSelector('input[type="file"]', { state: 'attached', timeout: 30000 });
 }
 
@@ -348,7 +353,6 @@ async function parcourirEtTraiterDossier(dossierActuel, page) {
     }
     console.log("=".repeat(70));
 
-    // 💥 Enregistrement dans statistique.txt
     if (totalFichiersReussis > 0) {
         const cheminFichierStats = path.join(__dirname, 'statistique.txt');
         

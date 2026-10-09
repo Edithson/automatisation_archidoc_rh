@@ -4,9 +4,12 @@ const path = require('path');
 const http = require('http');
 
 // --- CONFIGURATION ---
-const DOSSIER_RACINE = "/media/edithson/Ventoy/Dossiers Admin/6";
+const DOSSIER_RACINE = "/media/edithson/Ventoy/Dossiers Admin/";
 const NOM_DOSSIER_SUCCES = 'Fichiers_Archives_Succes';
 const URL_ARCHIVES = 'http://172.20.9.254:8000/archives';
+const user_login = 'cyril.fonyuy';
+const password = 'OOOOOOOO';
+const old_login = 'archive@mail.com';
 
 // Variable pour définir le séparateur du nom de fichier (' ' ou '_') et le service cible
 const SEPARATEUR_NOM_FICHIER = ' '; 
@@ -72,7 +75,8 @@ const DICTIONNAIRE_NATURES = {
     'STAGE': 'AUTRES TYPES DE DOCUMENTS', 'SYNTHESE': 'AUTRES TYPES DE DOCUMENTS',
     'TERMES': 'AUTRES TYPES DE DOCUMENTS', 'TRAITEMENT': 'AUTRES TYPES DE DOCUMENTS',
     'TRANSMISSION': 'AUTRES TYPES DE DOCUMENTS', 'TRAVAUX': 'AUTRES TYPES DE DOCUMENTS',
-    'VISA': 'AUTRES TYPES DE DOCUMENTS', 'BORDEREAUX': 'BORDEREAUX', 'CESSATION': 'BORDEREAUX'
+    'VISA': 'AUTRES TYPES DE DOCUMENTS', 'BORDEREAUX': 'BORDEREAUX', 'CESSATION': 'BORDEREAUX',
+    'ANNAXE': 'RAPPORTS', 'ANNAXES': 'RAPPORTS', 'ANNEXE': 'RAPPORTS', 'ANNEX': 'RAPPORTS'
 };
 
 const VALEURS_AUTORISEES = [
@@ -322,8 +326,8 @@ async function parcourirEtTraiterDossier(dossierActuel, page) {
     const emailInput = page.locator('input[name="email"]');
     if (await emailInput.count() > 0) {
         console.log("🔐 Authentification requise...");
-        await emailInput.fill('archive@mail.com');
-        await page.locator('input[name="password"]').fill('OOOOO');
+        await emailInput.fill(user_login);
+        await page.locator('input[name="password"]').fill(password);
         await page.locator('button:has-text("Connexion")').click();
         
         await page.waitForURL(URL_ARCHIVES, { timeout: 60000 });

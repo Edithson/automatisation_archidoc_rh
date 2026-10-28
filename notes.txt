@@ -28,3 +28,7 @@ SGCCC : 8105
 SO : 5693
 DCOB : 246
 Total : 14044
+
+Stat octobre
+SO = 1264
+SDAG = 187

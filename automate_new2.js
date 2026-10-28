@@ -4,16 +4,17 @@ const path = require('path');
 const http = require('http');
 
 // --- CONFIGURATION ---
-const DOSSIER_RACINE = "/media/edithson/Ventoy/DCOB 26";
+const DOSSIER_RACINE = "/media/edithson/Ventoy/DECISIONS/2";
 const NOM_DOSSIER_SUCCES = 'Fichiers_Archives_Succes';
 const URL_ARCHIVES = 'http://172.20.9.254:8000/archives';
-const user_login = 'cyril.fonyuy';
-const password = 'OOOOOOOO';
-const old_login = 'archive@mail.com';
+const old_login = 'cyril.fonyuy';
+const old_password = 'OOOOOOOO';
+const user_login = 'archive@mail.com';
+const password = 'OOOOO'
 
 // Variable pour définir le séparateur du nom de fichier (' ' ou '_') et le service cible
 const SEPARATEUR_NOM_FICHIER = ' '; 
-const SERVICE_CIBLE = 'DCOB';
+const SERVICE_CIBLE = 'SO';
 
 // --- DICTIONNAIRE INTELLIGENT ---
 const DICTIONNAIRE_NATURES = {
@@ -76,17 +77,18 @@ const DICTIONNAIRE_NATURES = {
     'TERMES': 'AUTRES TYPES DE DOCUMENTS', 'TRAITEMENT': 'AUTRES TYPES DE DOCUMENTS',
     'TRANSMISSION': 'AUTRES TYPES DE DOCUMENTS', 'TRAVAUX': 'AUTRES TYPES DE DOCUMENTS',
     'VISA': 'AUTRES TYPES DE DOCUMENTS', 'BORDEREAUX': 'BORDEREAUX', 'CESSATION': 'BORDEREAUX',
-    'ANNAXE': 'RAPPORTS', 'ANNAXES': 'RAPPORTS', 'ANNEXE': 'RAPPORTS', 'ANNEX': 'RAPPORTS'
+    'ANNAXE': 'RAPPORTS', 'ANNAXES': 'RAPPORTS', 'ANNEXE': 'RAPPORTS', 'ANNEX': 'RAPPORTS',
+    'ATTESTATIONS': 'ATTESTATION', 'ATTESTATION': 'ATTESTATION', 'MESSAGE': 'MESSAGE-FAX'
 };
 
 const VALEURS_AUTORISEES = [
-    "ATTESTATIONS", "MARCHE", "COMMUNIQUES", "COMPTE RENDU", "DEMANDES",
+    "ATTESTATION", "MARCHE", "COMMUNIQUES", "COMPTE RENDU", "DEMANDES",
     "SOIT-TRANSMIS", "CONVOCATIONS", "COURRIERS", "INVITATIONS",
     "INSTRUCTIONS", "CONSTITUTION", "LOI", "LETTRE DE MISSION", "ARRETE",
     "DECRET", "DOSSIER DU PERSONNEL", "ESD", "DOSSIER DES PENSIONS",
     "RAPPORTS", "NOTE", "DECISIONS", "FONDS DE DOSSIER", "BONS D'ENGAGEMENT",
     "MEMO", "AUTRES TYPES DE DOCUMENTS", "CERTIFICATS", "PROCES-VERBAL",
-    "BORDEREAUX", "ETATS DE SOMMES DUES", "NOTE DE SERVICE"
+    "BORDEREAUX", "ETATS DE SOMMES DUES", "NOTE DE SERVICE", "MESSAGE-FAX"
 ];
 
 let totalFichiersReussis = 0;

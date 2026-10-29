@@ -4,24 +4,56 @@ const path = require('path');
 const http = require('http');
 
 // --- CONFIGURATION ---
-const DOSSIER_RACINE = "/media/edithson/Ventoy/DECISIONS/2";
+const DOSSIER_RACINE = "/media/edithson/Ventoy/DOSSIERS ADMIN 2/SO/NOTE SERVICE";
 const NOM_DOSSIER_SUCCES = 'Fichiers_Archives_Succes';
 const URL_ARCHIVES = 'http://172.20.9.254:8000/archives';
 const old_login = 'cyril.fonyuy';
 const old_password = 'OOOOOOOO';
 const user_login = 'archive@mail.com';
-const password = 'OOOOO'
+const password = 'OOOOO';
 
 // Variable pour définir le séparateur du nom de fichier (' ' ou '_') et le service cible
 const SEPARATEUR_NOM_FICHIER = ' '; 
-const SERVICE_CIBLE = 'SO';
+const SERVICE_CIBLE = 'SO'; // Accepte le sigle ('SO', 'DCOB'...) ou le nom complet
+
+// --- DICTIONNAIRE DES DÉPARTEMENTS (Sigle value -> Libellé complet) ---
+const DICTIONNAIRE_DEPARTEMENTS = {
+    'CAB DGB': "CABINET DGB (CAB DGB)",
+    'DDPP': "DIRECTION DE LA DEPENSE DE PERSONNEL ET DES PENSIONS (DDPP)",
+    'DI': "DIVISION INFORMATIQUE (DI)",
+    'DPB': "DIVISION DE LA PREPARATION DU BUDGET (DPB)",
+    'DREF': "DIVISION DE LA REFORME BUDGETAIRE (DREF)",
+    'DPC': "DIVISION DES PARTICIPATIONS ET DES CONTRIBUTIONS (DPC)",
+    'DCOB': "DIVISION DU CONTROLE BUDGETAIRE DE L'AUDIT ET DE LA QUALITE DE LA DEPENSE (DCOB)",
+    'SO': "SERVICE D'ORDRE (SO)",
+    'SGDB': "SERVICE DE GESTION DES DOCUMENTS BUDGETAIRES (SGDB)",
+    'SGCCC': "SERVICE DE GESTION DES CREDITS DES CHAPITRES COMMUNS (SGCCC)",
+    'S-DAG': "SOUS DIRECTION DES AFFAIRES GENERALES (S-DAG)",
+    'S-DCF': "SOUS DIRECTION DU CONTROLE FINANCIER (S-DCF)"
+};
+
+function resoudreDepartement(cible) {
+    const cle = cible.trim().toUpperCase();
+    if (DICTIONNAIRE_DEPARTEMENTS[cle]) {
+        return { value: cle, label: DICTIONNAIRE_DEPARTEMENTS[cle] };
+    }
+    for (const [code, libelle] of Object.entries(DICTIONNAIRE_DEPARTEMENTS)) {
+        if (libelle.toUpperCase() === cle) {
+            return { value: code, label: libelle };
+        }
+    }
+    console.warn(`⚠️ Département "${cible}" non répertorié dans DICTIONNAIRE_DEPARTEMENTS, utilisation directe de la valeur.`);
+    return { value: cible.trim(), label: cible.trim() };
+}
+
+const DEPARTEMENT_CIBLE = resoudreDepartement(SERVICE_CIBLE);
 
 // --- DICTIONNAIRE INTELLIGENT ---
 const DICTIONNAIRE_NATURES = {
     'DECI': 'DECISIONS', 'FD': 'FONDS DE DOSSIER', 'ESD': 'ETATS DE SOMMES DUES', 'NOTE': 'NOTE DE SERVICE',
     'COMMUNIQUE': 'COMMUNIQUES', 'CONVOCATION': 'CONVOCATIONS', 'COURA': 'COURRIERS',
     'ST': 'SOIT-TRANSMIS', 'SOIT': 'SOIT-TRANSMIS', 'INVITATION': 'INVITATIONS',
-    'COURRIERS': 'COURRIERS', 'ATTESTATION': 'ATTESTATIONS', 'MARCHE': 'MARCHE',
+    'COURRIERS': 'COURRIERS', 'MARCHE': 'MARCHE',
     'INSTRUCTIONS': 'INSTRUCTIONS', 'CONSTITUTION': 'CONSTITUTION', 'LOI': 'LOI',
     'LETTRE-DE-MISSION': 'LETTRE DE MISSION', 'ARRETE': 'ARRETE', 'DECRET': 'DECRET',
     'DOSSIER-DU-PERSONNEL': 'DOSSIER DU PERSONNEL', 'DOSSIER-DES-PENSIONS': 'DOSSIER DES PENSIONS',
@@ -32,7 +64,7 @@ const DICTIONNAIRE_NATURES = {
     'ACCOMPAGNEMENT': 'AUTRES TYPES DE DOCUMENTS', 'ACCORD': 'AUTRES TYPES DE DOCUMENTS',
     'ACCREDITATION': 'AUTRES TYPES DE DOCUMENTS', 'ACHAT': 'AUTRES TYPES DE DOCUMENTS',
     'ALLEGATIONS': 'AUTRES TYPES DE DOCUMENTS', 'AMBASSADE': 'AUTRES TYPES DE DOCUMENTS',
-    'ANNEXE': 'AUTRES TYPES DE DOCUMENTS', 'ANNEXES': 'AUTRES TYPES DE DOCUMENTS',
+    'ANNEXES': 'AUTRES TYPES DE DOCUMENTS',
     'APPENDIX': 'AUTRES TYPES DE DOCUMENTS', 'APPLICATION': 'AUTRES TYPES DE DOCUMENTS',
     'APPUI': 'AUTRES TYPES DE DOCUMENTS', 'ATTRIBUTION': 'AUTRES TYPES DE DOCUMENTS',
     'AUTORISATION': 'AUTRES TYPES DE DOCUMENTS', 'BORDEREAU': 'BORDEREAUX', 
@@ -184,9 +216,7 @@ async function traiterFichier(page, cheminComplet, infosFichier) {
     await page.locator('#description').fill(infosFichier.nomSansExt);
     await page.locator('#date_doc').fill(infosFichier.dateFormatee);
     
-    // 💥 NOUVEAU : Remplissage conditionnel (Anti-Crash pour comptes restreints)
-    // On vérifie que l'élément existe (.count() > 0) avant de tenter d'agir dessus
-    
+    // Remplissage conditionnel (Anti-Crash pour comptes restreints)
     if (await page.locator('select:has(option[value="DGB"])').count() > 0) {
         await page.locator('select:has(option[value="DGB"])').selectOption('DGB', { force: true });
     }
@@ -203,8 +233,22 @@ async function traiterFichier(page, cheminComplet, infosFichier) {
         await page.locator('#cote').fill('C1560-40DE.10');
     }
     
-    if (await page.locator(`select:has(option[value="${SERVICE_CIBLE}"])`).count() > 0) {
-        await page.locator(`select:has(option[value="${SERVICE_CIBLE}"])`).selectOption(SERVICE_CIBLE, { force: true });
+    // 💥 SÉLECTION DU DÉPARTEMENT (value court + repli visuel sur le libellé détaillé)
+    const selectDept = page.locator(`select:has(option[value="${DEPARTEMENT_CIBLE.value}"])`);
+    const boutonDept = page.locator('#departement');
+
+    if (await selectDept.count() > 0) {
+        await selectDept.selectOption({ value: DEPARTEMENT_CIBLE.value }, { force: true });
+
+        // Double sécurité : si le combobox visuel affiche encore le placeholder, on sélectionne via le menu
+        if (await boutonDept.count() > 0 && (await boutonDept.getAttribute('data-placeholder')) !== null) {
+            await boutonDept.click();
+            const optionVisuelle = page.getByRole('option', { name: DEPARTEMENT_CIBLE.label, exact: true });
+            await optionVisuelle.waitFor({ state: 'visible', timeout: 5000 });
+            await optionVisuelle.click();
+        }
+    } else if (await boutonDept.count() > 0) {
+        console.warn(`      ⚠️ Le département "${DEPARTEMENT_CIBLE.value}" n'est pas disponible pour ce compte utilisateur.`);
     }
 
     // 💥 VALIDATION
@@ -320,7 +364,7 @@ async function parcourirEtTraiterDossier(dossierActuel, page) {
 // 5. POINT DE LANCEMENT (MAIN)
 // ==========================================
 (async () => {
-    console.log(`\n🚀 Lancement de l'automate intelligent...`);
+    console.log(`\n🚀 Lancement de l'automate intelligent (Département cible : ${DEPARTEMENT_CIBLE.label})...`);
 
     const browser = await chromium.launch({ headless: false, slowMo: 100 });
     const context = await browser.newContext();

@@ -4,7 +4,7 @@ const path = require('path');
 const http = require('http');
 
 // --- CONFIGURATION ---
-const DOSSIER_RACINE = "/media/edithson/Ventoy/DOSSIERS ADMIN 2/SO/NOTE SERVICE";
+const DOSSIER_RACINE = "/media/edithson/Ventoy/DOSSIERS ADMIN 2/PUBLIC";
 const NOM_DOSSIER_SUCCES = 'Fichiers_Archives_Succes';
 const URL_ARCHIVES = 'http://172.20.9.254:8000/archives';
 const old_login = 'cyril.fonyuy';
@@ -14,7 +14,7 @@ const password = 'OOOOO';
 
 // Variable pour définir le séparateur du nom de fichier (' ' ou '_') et le service cible
 const SEPARATEUR_NOM_FICHIER = ' '; 
-const SERVICE_CIBLE = 'SO'; // Accepte le sigle ('SO', 'DCOB'...) ou le nom complet
+const SERVICE_CIBLE = 'PUBLIC'; // Accepte le sigle ('SO', 'DCOB'...) ou le nom complet
 
 // --- DICTIONNAIRE DES DÉPARTEMENTS (Sigle value -> Libellé complet) ---
 const DICTIONNAIRE_DEPARTEMENTS = {
@@ -29,7 +29,8 @@ const DICTIONNAIRE_DEPARTEMENTS = {
     'SGDB': "SERVICE DE GESTION DES DOCUMENTS BUDGETAIRES (SGDB)",
     'SGCCC': "SERVICE DE GESTION DES CREDITS DES CHAPITRES COMMUNS (SGCCC)",
     'S-DAG': "SOUS DIRECTION DES AFFAIRES GENERALES (S-DAG)",
-    'S-DCF': "SOUS DIRECTION DU CONTROLE FINANCIER (S-DCF)"
+    'S-DCF': "SOUS DIRECTION DU CONTROLE FINANCIER (S-DCF)",
+    'PUBLIC': "PUBLIC (PUBLIC)"
 };
 
 function resoudreDepartement(cible) {
@@ -48,7 +49,7 @@ function resoudreDepartement(cible) {
 
 const DEPARTEMENT_CIBLE = resoudreDepartement(SERVICE_CIBLE);
 
-// --- DICTIONNAIRE INTELLIGENT ---
+// --- DICTIONNAIRE INTELLIGENT (Prioritaire sur le 1er mot du fichier) ---
 const DICTIONNAIRE_NATURES = {
     'DECI': 'DECISIONS', 'FD': 'FONDS DE DOSSIER', 'ESD': 'ETATS DE SOMMES DUES', 'NOTE': 'NOTE DE SERVICE',
     'COMMUNIQUE': 'COMMUNIQUES', 'CONVOCATION': 'CONVOCATIONS', 'COURA': 'COURRIERS',
@@ -113,16 +114,6 @@ const DICTIONNAIRE_NATURES = {
     'ATTESTATIONS': 'ATTESTATION', 'ATTESTATION': 'ATTESTATION', 'MESSAGE': 'MESSAGE-FAX'
 };
 
-const VALEURS_AUTORISEES = [
-    "ATTESTATION", "MARCHE", "COMMUNIQUES", "COMPTE RENDU", "DEMANDES",
-    "SOIT-TRANSMIS", "CONVOCATIONS", "COURRIERS", "INVITATIONS",
-    "INSTRUCTIONS", "CONSTITUTION", "LOI", "LETTRE DE MISSION", "ARRETE",
-    "DECRET", "DOSSIER DU PERSONNEL", "ESD", "DOSSIER DES PENSIONS",
-    "RAPPORTS", "NOTE", "DECISIONS", "FONDS DE DOSSIER", "BONS D'ENGAGEMENT",
-    "MEMO", "AUTRES TYPES DE DOCUMENTS", "CERTIFICATS", "PROCES-VERBAL",
-    "BORDEREAUX", "ETATS DE SOMMES DUES", "NOTE DE SERVICE", "MESSAGE-FAX"
-];
-
 let totalFichiersReussis = 0;
 let listeGlobaleEchecs = [];
 
@@ -130,18 +121,23 @@ let listeGlobaleEchecs = [];
 // 1. MODULE DE VALIDATION ET D'EXTRACTION
 // ==========================================
 function validerEtExtraireInfos(nomFichier) {
-    const nomSansExt = nomFichier.replace(/\.pdf$/i, '');
-    const parts = nomSansExt.split(SEPARATEUR_NOM_FICHIER); 
+    const nomSansExt = nomFichier.replace(/\.pdf$/i, '').trim();
+    const parts = nomSansExt.split(SEPARATEUR_NOM_FICHIER).map(p => p.trim()).filter(Boolean);
 
     if (parts.length < 3) {
-        throw new Error(`STRUCTURE_INVALIDE: Manque d'informations (pas de '${SEPARATEUR_NOM_FICHIER}').`);
+        throw new Error(`STRUCTURE_INVALIDE: Manque d'informations (séparateur '${SEPARATEUR_NOM_FICHIER}').`);
     }
 
-    const prefix = parts[0];
-    const natureDocument = DICTIONNAIRE_NATURES[prefix] || prefix;
+    const prefixBrut = parts[0].toUpperCase();
+    const traductionDico = DICTIONNAIRE_NATURES[prefixBrut];
 
-    if (!VALEURS_AUTORISEES.includes(natureDocument)) {
-        throw new Error(`STRUCTURE_INVALIDE: Nature de document non autorisée ou inconnue ('${prefix}' -> '${natureDocument}').`);
+    // Ordre de priorité : 1. Dictionnaire (si défini) -> 2. 1er élément exact du fichier
+    const candidatsNature = [];
+    if (traductionDico) {
+        candidatsNature.push(traductionDico);
+    }
+    if (!candidatsNature.includes(prefixBrut)) {
+        candidatsNature.push(prefixBrut);
     }
 
     const dateStr = parts[parts.length - 1];
@@ -153,8 +149,14 @@ function validerEtExtraireInfos(nomFichier) {
     const mois = dateStr.substring(2, 4);
     const annee = dateStr.substring(4, 8);
 
+    const jourNum = Number(jour);
+    const moisNum = Number(mois);
+    if (jourNum < 1 || jourNum > 31 || moisNum < 1 || moisNum > 12) {
+        throw new Error(`STRUCTURE_INVALIDE: Date incohérente ('${dateStr}').`);
+    }
+
     return {
-        natureDocument,
+        candidatsNature,
         nomSansExt,
         dateFormatee: `${annee}-${mois}-${jour}`
     };
@@ -192,10 +194,54 @@ async function ecouterReseauEtMettreEnPause() {
 }
 
 // ==========================================
-// 3. FONCTION CORE : UPLOAD (Sécurisée)
+// 3. UTILITAIRES D'INTERFACE & UPLOAD
 // ==========================================
+function echapperRegex(texte) {
+    return texte.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+async function selectionnerTypeArchive(page, candidats) {
+    const champType = page.locator('#typearchive');
+    const conteneurType = page.locator('div.relative:has(#typearchive)');
+
+    for (const candidat of candidats) {
+        await champType.click();
+        await champType.fill('');
+        await champType.fill(candidat);
+
+        // Recherche uniquement le bouton dont le texte complet est strictement identique au candidat
+        const regexExacte = new RegExp(`^\\s*${echapperRegex(candidat)}\\s*$`, 'i');
+        const optionExacte = conteneurType.locator('ul button').filter({ hasText: regexExacte });
+
+        try {
+            await optionExacte.first().waitFor({ state: 'visible', timeout: 3000 });
+            await optionExacte.first().click();
+            console.log(`      -> 🏷️ Type d'archive retenu : "${candidat}"`);
+            return;
+        } catch (_) {
+            // Aucune correspondance exacte pour ce candidat, passage au suivant
+        }
+    }
+
+    throw new Error(`TYPE_INTROUVABLE: Aucune option exacte dans le menu pour [${candidats.join(' -> ')}].`);
+}
+
+async function reinitialiserFormulaire(page) {
+    try {
+        const lienNouvelleArchive = page.locator('a:has-text("Nouvelle Archive")');
+        if (await lienNouvelleArchive.count() > 0) {
+            await lienNouvelleArchive.click();
+            await page.waitForSelector('input[type="file"]', { state: 'attached', timeout: 15000 });
+            return;
+        }
+    } catch (_) {
+        // Repli vers un rechargement complet si la réinitialisation douce échoue
+    }
+    await page.goto(URL_ARCHIVES, { waitUntil: 'domcontentloaded', timeout: 90000 }).catch(() => {});
+}
+
 async function traiterFichier(page, cheminComplet, infosFichier) {
-    // 💥 ÉTAPE 1 : Upload
+    // ÉTAPE 1 : Upload
     await page.waitForSelector('input[type="file"]', { state: 'attached', timeout: 90000 });
     await page.locator('input[type="file"]').setInputFiles(cheminComplet);
 
@@ -203,15 +249,12 @@ async function traiterFichier(page, cheminComplet, infosFichier) {
     await btnSuivant.waitFor({ state: 'visible', timeout: 30000 });
     await btnSuivant.click();
 
-    // 💥 ÉTAPE 2 : Métadonnées
+    // ÉTAPE 2 : Métadonnées
     await page.waitForSelector('select[name="format"]', { state: 'attached', timeout: 90000 });
     await page.locator('select[name="format"]').selectOption('Document PDF', { force: true });
     
-    // Autocomplete pour Type d'archive
-    await page.locator('#typearchive').fill(infosFichier.natureDocument);
-    const dropdownOption = page.locator('ul.absolute button', { hasText: infosFichier.natureDocument });
-    await dropdownOption.waitFor({ state: 'visible', timeout: 5000 });
-    await dropdownOption.click();
+    // Sélection stricte avec priorité Dictionnaire -> 1er mot du fichier
+    await selectionnerTypeArchive(page, infosFichier.candidatsNature);
 
     await page.locator('#description').fill(infosFichier.nomSansExt);
     await page.locator('#date_doc').fill(infosFichier.dateFormatee);
@@ -233,14 +276,13 @@ async function traiterFichier(page, cheminComplet, infosFichier) {
         await page.locator('#cote').fill('C1560-40DE.10');
     }
     
-    // 💥 SÉLECTION DU DÉPARTEMENT (value court + repli visuel sur le libellé détaillé)
+    // Sélection du département (value court + repli visuel sur le libellé détaillé)
     const selectDept = page.locator(`select:has(option[value="${DEPARTEMENT_CIBLE.value}"])`);
     const boutonDept = page.locator('#departement');
 
     if (await selectDept.count() > 0) {
         await selectDept.selectOption({ value: DEPARTEMENT_CIBLE.value }, { force: true });
 
-        // Double sécurité : si le combobox visuel affiche encore le placeholder, on sélectionne via le menu
         if (await boutonDept.count() > 0 && (await boutonDept.getAttribute('data-placeholder')) !== null) {
             await boutonDept.click();
             const optionVisuelle = page.getByRole('option', { name: DEPARTEMENT_CIBLE.label, exact: true });
@@ -251,7 +293,7 @@ async function traiterFichier(page, cheminComplet, infosFichier) {
         console.warn(`      ⚠️ Le département "${DEPARTEMENT_CIBLE.value}" n'est pas disponible pour ce compte utilisateur.`);
     }
 
-    // 💥 VALIDATION
+    // VALIDATION
     const boutonValider = page.locator('button:has-text("Valider & Créer l\'archive")');
     await boutonValider.waitFor({ state: 'visible', timeout: 90000 });
     
@@ -266,12 +308,10 @@ async function traiterFichier(page, cheminComplet, infosFichier) {
     await reponseServeurPromise;
     console.log("      -> ✅ Upload confirmé par le serveur !");
     
-    // 💥 RÉINITIALISATION
+    // RÉINITIALISATION
     await page.waitForTimeout(1000); 
     console.log("      -> 🔄 Réinitialisation du formulaire via le menu latéral...");
-    await page.locator('a:has-text("Nouvelle Archive")').click();
-    
-    await page.waitForSelector('input[type="file"]', { state: 'attached', timeout: 30000 });
+    await reinitialiserFormulaire(page);
 }
 
 // ==========================================
@@ -315,6 +355,11 @@ async function parcourirEtTraiterDossier(dossierActuel, page) {
                 if (e.message.startsWith('STRUCTURE_INVALIDE')) {
                     console.error(`      ❌ Rejeté (Format Invalide) : ${e.message.replace('STRUCTURE_INVALIDE: ', '')}`);
                     listeGlobaleEchecs.push(`[FORMAT INVALIDE] ${cheminComplet}`);
+                } else if (e.message.startsWith('TYPE_INTROUVABLE')) {
+                    console.error(`      ❌ Upload annulé : ${e.message.replace('TYPE_INTROUVABLE: ', '')}`);
+                    listeGlobaleEchecs.push(`[TYPE INTROUVABLE] ${cheminComplet}`);
+                    console.log("      -> 🔄 Purge du fichier en cours et retour à l'étape 1...");
+                    await reinitialiserFormulaire(page);
                 } else {
                     console.error(`      ⚠️ Échec (Timeout/Réseau) : ${e.message.split('\n')[0]}`);
                     echecsLocaux.push(nomFichier);
